@@ -37,6 +37,10 @@ footer span {
   bottom: 2%;
 }
 
+.project-body {
+  text-align: left;
+}
+
 .template {
   width: 100%;
   margin-top: 10px;
