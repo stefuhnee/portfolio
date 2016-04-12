@@ -44,11 +44,11 @@ section {
 
 a {
   text-decoration: none;
-  color: #d1d7bb;
+  color: #ffffff;
 }
 
 a:hover {
-  color: #ffffff;
+  color: #d1d7bb;
 }
 
 footer span {
@@ -81,6 +81,10 @@ nav.social ul {
   right: 1%;
 }
 
+nav.main-nav li {
+  margin-right: 5px;
+}
+
 nav.social li, nav.main-nav li {
   display: inline;
 }
@@ -98,6 +102,18 @@ nav.main-nav ul {
 
 .article-box {
   background-color: #f2f2f2;
+}
+
+.article-box a {
+  color: #b4bf5e;
+  display: block;
+  padding-bottom: 2px;
+  border: 1px solid black;
+  border-bottom: 0;
+  width: 17%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0 auto;
 }
 
 .article-box h1 {

@@ -20,27 +20,34 @@
       </nav>
       <nav class="main-nav">
         <ul>
-          <li class="tab"><a href="#">Home</a></li>
-          <li class="tab"><a href="#">About</a></li>
+          <li class="tab" data-content="projects"><a href="#">Home</a></li>
+          <li class="tab" data-content="about"><a href="#">About</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="projects">
+      <section id="projects" class="tab-content">
         <article class="template">
           <div class="article-box">
             <h1>Title</h1>
             <h2>Posted <time postdate datetime="2000-01-01">Date Posted</time></h2>
-            <article class="project-body"></article>
+            <article class="project-body">
+            </article>
+            <a href="#" class="read-on">Continue Reading</a>
           </div>
         </article>
+      </section>
+      <section id="about" class="tab-content">
+        <h1>About Stefanie</h1>
+        <p>Some super cool things about me</p>
       </section>
       <footer>
         <span>&copy; 2016 Stefanie Hansen</span>
       </footer>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-      <script src="scripts/projects.js"></script>
+    <script src="scripts/projects.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/projectView.js"></script>
   </body>
 </html>
