@@ -8,11 +8,14 @@ function Project (properties) {
 
 Project.prototype.toHTML = function() {
   var $newProject = $('article.template').clone();
+
   $newProject.find('h1').text(this.title);
-  $newProject.find('projectBody').html(this.projectBody);
+  $newProject.find('.project-body').html(this.projectBody);
   $newProject.find('time[postDate]').attr('title', this.postDate);
-  $newProject.find('time').html('roughly ' + parseInt((new Date() - new Date(this.postDate))/60/60/24/1000) + ' days ago');
-  $newProject.append('<hr>');
+  $newProject.find('time').html(parseInt((new Date() - new Date(this.postDate))/60/60/24/1000) + ' days ago');
+
+  $newProject.removeClass('template');
+  return $newProject;
 };
 
 portfolioProjects.sort(function(a,b) {
