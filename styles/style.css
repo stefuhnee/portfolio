@@ -6,13 +6,19 @@ body {
 header {
   height: 125px;
   width: 80%;
-  background-color: pink;
   margin-left: auto;
   margin-right: auto;
   background-color: #a6a376;
   position: relative;
   text-align: center;
   border: 1px solid black;
+}
+
+header h1 {
+  font-family: 'Buda', sans-serif;
+  font-size: 4.5em;
+  position: relative;
+  bottom: -5px;
 }
 
 main {
@@ -34,6 +40,15 @@ footer {
 
 section {
   text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #d1d7bb;
+}
+
+a:hover {
+  color: #ffffff;
 }
 
 footer span {
@@ -60,22 +75,29 @@ footer span {
   background-color: #f2f2f2;
 }
 
-.social {
-  text-align: center;
-}
-
-.social ul {
+nav.social ul {
   position: absolute;
   bottom: -10px;
   right: 1%;
 }
 
-.social li {
+nav.social li, nav.main-nav li {
   display: inline;
 }
 
-.social img {
+nav.social img {
   width: 30px;
+}
+
+nav.main-nav ul {
+  position: absolute;
+  bottom: -10px;
+  left: -2%;
+  list-style: none;
+}
+
+.article-box {
+  background-color: #f2f2f2;
 }
 
 .article-box h1 {
@@ -83,8 +105,6 @@ footer span {
   background-color: #a6a376;
   color: #f2f2f2;
   padding: 5px 0 5px 0;
-  /*position: relative;
-  bottom: 50px;*/
 }
 
 .article-box h2 {
@@ -94,7 +114,6 @@ footer span {
   position: relative;
   bottom: 20px;
   font-style: italic;
-  /*display: inline-block;*/
 }
 
 .article-box p {
