@@ -1,5 +1,6 @@
 body {
-  background-color: #fff7eb;
+  background-color: #d1d7bb;
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
@@ -8,9 +9,10 @@ header {
   background-color: pink;
   margin-left: auto;
   margin-right: auto;
-  background-color: #104f53;
+  background-color: #a6a376;
   position: relative;
   text-align: center;
+  border: 1px solid black;
 }
 
 main {
@@ -22,12 +24,12 @@ main {
 
 footer {
   height: 30px;
-  background-color: #000;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
-  color: #fff;
+  background-color: #a6a376;
+  position: relative;
 }
 
 section {
@@ -36,8 +38,9 @@ section {
 
 footer span {
   position: absolute;
-  right: 13%;
-  bottom: 2%;
+  display: inline-block;
+  right: 10px;
+  top: 7px;
 }
 
 .project-body {
@@ -52,8 +55,9 @@ footer span {
   width: 96%;
   margin-top: 10px;
   border: 1px solid black;
-  padding: 2%;
+  padding: 0 2% 0 2%;
   position: relative;
+  background-color: #f2f2f2;
 }
 
 .social {
@@ -76,16 +80,20 @@ footer span {
 
 .article-box h1 {
   font-size: 1.5em;
-  background-color: #4c0016;
-  color: #fff7eb;
+  background-color: #a6a376;
+  color: #f2f2f2;
+  padding: 5px 0 5px 0;
+  /*position: relative;
+  bottom: 50px;*/
 }
 
 .article-box h2 {
   font-size: 1em;
-  color: #a17345;
+  color: #b4bf5e;
   float: right;
   position: relative;
   bottom: 20px;
+  font-style: italic;
   /*display: inline-block;*/
 }
 
