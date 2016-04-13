@@ -23,18 +23,17 @@ header h1 {
 
 main {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  height: 400px;
+  margin: 0 auto;
 }
 
 footer {
-  height: 30px;
+  height: 2em;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10px;
+  margin-top: 1em;
   background-color: #a6a376;
+  bottom: 0;
   position: relative;
 }
 
@@ -65,7 +64,13 @@ nav {
   text-align: center;
 }
 
+img {
+  margin-top: 2em;
+  max-width: 100%;
+}
+
 .project-body {
+  position: relative;
   text-align: left;
 }
 
@@ -75,7 +80,7 @@ nav {
 
 .article-box {
   width: 96%;
-  margin-top: 10px;
+  margin-top: 1em;
   border: 1px solid black;
   padding: 0 2% 0 2%;
   position: relative;
@@ -116,7 +121,7 @@ nav.social img {
   background-color: #f2f2f2;
 }
 
-.article-box a {
+.article-box .read-on, .read-less {
   color: #b4bf5e;
   display: block;
   padding-bottom: 2px;
@@ -126,6 +131,7 @@ nav.social img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   margin: 0 auto;
+  min-width: 30%;
 }
 
 .article-box h1 {
