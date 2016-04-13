@@ -1,55 +1,12 @@
-body {
-  background-color: #d1d7bb;
-  font-family: 'Cantarell', sans-serif;
-}
-
-header {
-  height: 125px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #a6a376;
-  position: relative;
-  text-align: center;
-  border: 1px solid black;
-}
-
 header h1 {
   font-family: 'Fjalla One', sans-serif;
   font-weight: normal;
-  font-size: 4.5em;
-  position: relative;
-  bottom: 5%;
-  max-width: 100%;
-}
-
-main {
-  width: 80%;
-  margin: 0 auto;
-}
-
-footer {
-  height: 2em;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em;
-  background-color: #a6a376;
-  bottom: 0;
-  position: relative;
+  font-size: 3em;
+  /*max-width: 100%;*/
 }
 
 section {
   text-align: center;
-}
-
-a {
-  text-decoration: none;
-  color: #f2f2f2;
-}
-
-a:hover {
-  color: #d1d7bb;
 }
 
 footer span {
@@ -59,14 +16,7 @@ footer span {
   top: 7px;
 }
 
-nav {
-  width: auto;
-  position: relative;
-  bottom: 85%;
-  text-align: center;
-}
-
-img {
+.project-body img {
   margin-top: 2em;
   max-width: 100%;
 }
@@ -75,10 +25,6 @@ img {
   position: relative;
   text-align: left;
   bottom: 2.5em;
-}
-
-.template {
-  display: none;
 }
 
 .article-box {
@@ -90,31 +36,18 @@ img {
   background-color: #f2f2f2;
 }
 
-nav.social {
-  display: inline;
-  position: absolute;
-  bottom: -13%;
-  right: 2%;
-}
-
-nav.main-nav {
-  margin: 0 auto;
-  display: block;
-  position: absolute;
-  bottom: -12%;
-}
-
-nav.social ul, nav.main ul {
+nav.social ul, nav.main-nav ul {
   list-style: none;
-}
-
-nav.main-nav li {
-  margin-right: 5px;
 }
 
 nav.social li, nav.main-nav li {
   display: inline;
 }
+
+nav.main-nav li {
+  padding: 0 1em;
+}
+
 
 nav.social img {
   width: 30px;
@@ -124,7 +57,7 @@ nav.social img {
   background-color: #f2f2f2;
 }
 
-.article-box .read-on, .read-less {
+.article-box .read-on, .article-box .read-less {
   color: #a6a376;
   display: block;
   padding-bottom: 2px;
