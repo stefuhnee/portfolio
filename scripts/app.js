@@ -4,11 +4,13 @@ function Project (properties) {
   this.title = properties.title;
   this.postDate = properties.postDate;
   this.projectBody = properties.projectBody;
+  this.category = properties.category;
 }
 
 Project.prototype.toHTML = function() {
   var $newProject = $('article.template').clone();
 
+  $newProject.attr('data-category', this.category);
   $newProject.find('h1').text(this.title);
   $newProject.find('.project-body').html(this.projectBody);
   $newProject.find('time[postDate]').attr('title', this.postDate);

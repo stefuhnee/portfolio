@@ -1,5 +1,8 @@
 var projectView = {};
 
+projectView.populateFilters = function() {
+}
+
 projectView.handleMainNav = function() {
   $('.main-nav').on('click', 'li', function() {
     $('section.tab-content').hide();
