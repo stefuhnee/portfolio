@@ -24,20 +24,12 @@ footer {
 nav {
   width: 100%;
   text-align: center;
-  /*position: relative;*/
-  /*bottom: 85%;*/
 }
 
 nav.social {
-  /*display: inline;*/
-  /*position: absolute;
-  bottom: -13%;
-  right: 2%;*/
 }
 
 nav.main-nav {
   margin: 0 auto;
   display: block;
-  /*position: absolute;
-  bottom: -12%;*/
 }
