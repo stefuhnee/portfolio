@@ -1,7 +1,8 @@
 header h1 {
   font-family: 'Fjalla One', sans-serif;
   font-weight: normal;
-  font-size: 3em;
+  font-size: 8vw;
+  display: inline-block;
 }
 
 section {
@@ -13,17 +14,22 @@ footer span {
   float: right;
   margin-right: 1em;
   margin-bottom: .5em;
+  font-size: 2.5vw;
 }
 
 .project-body img {
   margin-top: 2em;
   max-width: 100%;
+  margin: 0 auto;
 }
 
 .project-body {
   position: relative;
+  text-align: center;
+}
+
+.project-body p {
   text-align: left;
-  bottom: 2.5em;
 }
 
 .article-box {
@@ -51,9 +57,8 @@ nav.main-nav li {
   padding: 0 1em;
 }
 
-
-nav.social img {
-  width: 40px;
+nav.social {
+  font-size: 2em;
 }
 
 .article-box {
@@ -71,32 +76,30 @@ nav.social img {
   border-top-right-radius: 10px;
   margin: 0 auto;
   min-width: 30%;
+  font-size: 3vw;
 }
 
 .article-box h1 {
-  margin-top: 1em; 
   font-family: 'Fjalla One', sans-serif;
   font-weight: lighter;
   width: 100%;
   display: inline-block;
-  font-size: 1.5em;
+  font-size: 6vw;
   color: #a6a376;
-  padding: 5px 0 5px 0;
   position: relative;
-  bottom: 1em;
 }
 
 .article-box h2 {
   font-weight: lighter;
   display: inline-block;
-  font-size: .9em;
+  font-size: 3vw;
   color: #000;
   float: right;
   font-style: italic;
 }
 
 .article-box p {
-  font-size: 1em;
+  font-size: 3.5vw;
   position: relative;
   clear: both;
 
