@@ -1,6 +1,29 @@
 var projectView = {};
 
-projectView.populateFilters = function() {
+projectView.populateFilter = function() {
+  $('article').each(function() {
+    if (!$(this).hasClass('template')) {
+      var val = $(this).attr('data-category');
+      console.log(val);
+      var optionTag = '<option value="' + val + '">' + val + '</option>';
+
+      if ($('#category-filter option[value="' + val + '"]')) {
+        $('#category-filter').append(optionTag);
+      }
+    }
+  });
+};
+
+projectView.handleCategoryFilter = function() {
+  $('#category-filter').on('change', function() {
+    if ($(this).val()) {
+      $('article').hide();
+      $('article[data-category="' + $(this).val() + '"]').show();
+    } else {
+      $('article').show();
+      $('article.template').hide();
+    }
+  });
 };
 
 projectView.handleMainNav = function() {
@@ -32,6 +55,8 @@ projectView.setTeasers = function() {
 };
 
 $(document).ready(function() {
+  projectView.populateFilter();
+  projectView.handleCategoryFilter();
   projectView.handleMainNav();
   projectView.setTeasers();
 });
