@@ -1,0 +1,121 @@
+header h1 {
+  font-weight: normal;
+  font-size: 15vmin;
+  display: inline-block;
+  position: relative;
+  z-index: 10;
+  top: .75em;
+  right: 1.8em;
+}
+
+section {
+  text-align: center;
+  max-width: 100%;
+}
+
+footer span {
+  margin-right: 1em;
+}
+
+.project-body img {
+  margin-top: 2em;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.project-body {
+  position: relative;
+  text-align: center;
+}
+
+.project-body p {
+  text-align: left;
+}
+
+.article-box {
+  width: 96%;
+  margin-top: 1em;
+  border: 1px solid black;
+  padding: 0 2% 0 2%;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+.article-box h1, .article-box h2 {
+  margin: 0;
+}
+
+nav.social ul, nav.main-nav ul {
+  list-style: none;
+}
+
+nav.social li, nav.main-nav li {
+  display: inline;
+}
+
+nav.main-nav li {
+  padding: 0 1vmin;
+}
+
+nav.social {
+  text-align: right;
+  font-size: 3.5vmin;
+  position: relative;
+  top: 5em;
+}
+
+nav.main-nav {
+  font-size: 5vmin;
+  background-color: #a6a376;
+  text-align:center;
+  position: relative;
+  bottom: 2em;
+}
+
+.article-box {
+  background-color: #f2f2f2;
+}
+
+.article-box .read-on, .article-box .read-less {
+  color: #a6a376;
+  display: block;
+  padding-bottom: 2px;
+  border: 1px solid black;
+  border-bottom: 0;
+  width: 17%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0 auto;
+  min-width: 30%;
+  font-size: 3vw;
+}
+
+.article-box h1 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: lighter;
+  width: 100%;
+  display: inline-block;
+  font-size: 6vw;
+  color: #a6a376;
+  position: relative;
+}
+
+.article-box h2 {
+  font-weight: lighter;
+  display: inline-block;
+  font-size: 3vmin;
+  color: #000;
+  float: right;
+  margin-top: .5em;
+  font-style: italic;
+}
+
+.article-box p {
+  font-size: 3.5vw;
+  position: relative;
+  clear: both;
+}
+
+.article-box a {
+  color: #a6a376;
+}

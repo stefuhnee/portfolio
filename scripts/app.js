@@ -5,6 +5,7 @@ function Project (properties) {
   this.postDate = properties.postDate;
   this.projectBody = properties.projectBody;
   this.category = properties.category;
+  this.location = properties.location;
 }
 
 Project.prototype.toHTML = function() {
@@ -13,6 +14,7 @@ Project.prototype.toHTML = function() {
   $newProject.attr('data-category', this.category);
   $newProject.find('h1').text(this.title);
   $newProject.find('.project-body').html(this.projectBody);
+  $newProject.find('.project-url').attr('href', this.location);
   $newProject.find('time[postDate]').attr('title', this.postDate);
   $newProject.find('time').html(parseInt((new Date() - new Date(this.postDate))/60/60/24/1000) + ' days ago');
 

@@ -1,0 +1,27 @@
+header {
+  height: auto;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  height: 5%;
+  width: 100%;
+  margin-top: 1em;
+  bottom: 0;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+}
+
+nav.main-nav {
+  margin: 0 auto;
+  display: block;
+}
