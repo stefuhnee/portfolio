@@ -5,7 +5,7 @@
     <title>Stefanie Hansen's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="vendor/styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,400italic|Alegreya' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header>
@@ -18,23 +18,37 @@
           <li><a href="https://www.facebook.com/stefuhn33" target="_blank"><img src="img/facebook.png" /></a></li>
         </ul>
       </nav>
+      <nav class="main-nav">
+        <ul>
+          <li class="tab" data-content="projects"><a href="#">Home</a></li>
+          <li class="tab" data-content="about"><a href="#">About</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-      <section id="projects">
-        <article class="template">
+      <section id="projects" class="tab-content">
+        <article class="template" data-category="cat">
           <div class="article-box">
             <h1>Title</h1>
             <h2>Posted <time postdate datetime="2000-01-01">Date Posted</time></h2>
-            <article class="project-body"></article>
+            <article class="project-body">
+            </article>
+            <a href="#" class="read-on">Continue Reading</a>
+            <a href="#" class="read-less">Less</a>
           </div>
         </article>
+      </section>
+      <section id="about" class="tab-content">
+        <h1>About Stefanie</h1>
+        <p>Some super cool things about me</p>
       </section>
       <footer>
         <span>&copy; 2016 Stefanie Hansen</span>
       </footer>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-      <script src="scripts/projects.js"></script>
+    <script src="scripts/projects.js"></script>
     <script src="scripts/app.js"></script>
+    <script src="scripts/projectView.js"></script>
   </body>
 </html>

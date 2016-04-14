@@ -6,13 +6,19 @@ body {
 header {
   height: 125px;
   width: 80%;
-  background-color: pink;
   margin-left: auto;
   margin-right: auto;
   background-color: #a6a376;
   position: relative;
   text-align: center;
   border: 1px solid black;
+}
+
+header h1 {
+  font-family: 'Alegreya', sans-serif;
+  font-size: 4.5em;
+  position: relative;
+  bottom: 5%;
 }
 
 main {
@@ -36,11 +42,27 @@ section {
   text-align: center;
 }
 
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:hover {
+  color: #d1d7bb;
+}
+
 footer span {
   position: absolute;
   display: inline-block;
   right: 10px;
   top: 7px;
+}
+
+nav {
+  width: auto;
+  position: relative;
+  bottom: 85%;
+  text-align: center;
 }
 
 .project-body {
@@ -60,22 +82,50 @@ footer span {
   background-color: #f2f2f2;
 }
 
-.social {
-  text-align: center;
-}
-
-.social ul {
+nav.social {
+  display: inline;
   position: absolute;
-  bottom: -10px;
-  right: 1%;
+  bottom: -13%;
+  right: 2%;
 }
 
-.social li {
+nav.main-nav {
+  margin: 0 auto;
+  display: block;
+  position: absolute;
+  bottom: -12%;
+}
+
+nav.social ul, nav.main ul {
+  list-style: none;
+}
+
+nav.main-nav li {
+  margin-right: 5px;
+}
+
+nav.social li, nav.main-nav li {
   display: inline;
 }
 
-.social img {
+nav.social img {
   width: 30px;
+}
+
+.article-box {
+  background-color: #f2f2f2;
+}
+
+.article-box a {
+  color: #b4bf5e;
+  display: block;
+  padding-bottom: 2px;
+  border: 1px solid black;
+  border-bottom: 0;
+  width: 17%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: 0 auto;
 }
 
 .article-box h1 {
@@ -83,8 +133,6 @@ footer span {
   background-color: #a6a376;
   color: #f2f2f2;
   padding: 5px 0 5px 0;
-  /*position: relative;
-  bottom: 50px;*/
 }
 
 .article-box h2 {
@@ -94,7 +142,6 @@ footer span {
   position: relative;
   bottom: 20px;
   font-style: italic;
-  /*display: inline-block;*/
 }
 
 .article-box p {
