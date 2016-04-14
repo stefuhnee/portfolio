@@ -13,3 +13,27 @@ a:hover {
 nav.social li:hover {
   transform: translateY(100deg);
 }
+
+@media (min-width: 600px) {
+  body {
+    margin: 0 4%;
+  }
+  .article-box p {
+    font-size: 1.2em;
+  }
+  .article-box h1 {
+    font-size: 2em;
+  }
+  .article-box .read-on, .article-box .read-less {
+    font-size: 1.2em;
+  }
+  .article-box h2 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 850px)  {
+  .article-box .read-on, .article-box .read-less {
+    min-width: 25%;
+  }
+}
