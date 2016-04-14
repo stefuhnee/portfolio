@@ -1,8 +1,11 @@
 header h1 {
-  font-family: 'Fjalla One', sans-serif;
   font-weight: normal;
-  font-size: 8vw;
+  font-size: 15vmin;
   display: inline-block;
+  position: relative;
+  z-index: 10;
+  top: .75em;
+  right: 1.8em;
 }
 
 section {
@@ -11,10 +14,7 @@ section {
 }
 
 footer span {
-  float: right;
   margin-right: 1em;
-  margin-bottom: .5em;
-  font-size: 2.5vw;
 }
 
 .project-body img {
@@ -54,11 +54,22 @@ nav.social li, nav.main-nav li {
 }
 
 nav.main-nav li {
-  padding: 0 1em;
+  padding: 0 1vmin;
 }
 
 nav.social {
-  font-size: 2em;
+  text-align: right;
+  font-size: 3.5vmin;
+  position: relative;
+  top: 1.7em;
+}
+
+nav.main-nav {
+  font-size: 5vmin;
+  background-color: #a6a376;
+  text-align:center;
+  position: relative;
+  bottom: 2em;
 }
 
 .article-box {
@@ -92,9 +103,10 @@ nav.social {
 .article-box h2 {
   font-weight: lighter;
   display: inline-block;
-  font-size: 3vw;
+  font-size: 3vmin;
   color: #000;
   float: right;
+  margin-top: .5em;
   font-style: italic;
 }
 
@@ -102,5 +114,8 @@ nav.social {
   font-size: 3.5vw;
   position: relative;
   clear: both;
+}
 
+.article-box a {
+  color: #a6a376;
 }

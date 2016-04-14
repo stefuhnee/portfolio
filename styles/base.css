@@ -1,18 +1,21 @@
 body {
   background-color: #d1d7bb;
   /*background-image: url('../img/005.jpg');*/
-  font-family: 'Cantarell', sans-serif;
+  font-family: 'Cardo', sans-serif;
   margin: 0 2%;
 }
 
 header {
-  background-color: #a6a376;
-  text-align: center;
-  border: 1px solid black;
+  text-align: left;
+  font-family: "Lobster", sans-serif;
+  position: relative;
+  bottom: 2em;
 }
 
 footer {
   background-color: #a6a376;
+  width: 100%;
+  text-align: right;
 }
 
 h1 {
@@ -29,6 +32,6 @@ a {
 }
 
 nav {
-  text-align:center;
+  font-family: "Montserrat", sans-serif;
   width: 100%;
 }
