@@ -1,19 +1,5 @@
 var projectView = {};
 
-projectView.populateFilter = function() {
-  $('article').each(function() {
-    if (!$(this).hasClass('template')) {
-      var val = $(this).attr('data-category');
-      console.log(val);
-      var optionTag = '<option value="' + val + '">' + val + '</option>';
-
-      if ($('#category-filter option[value="' + val + '"]')) {
-        $('#category-filter').append(optionTag);
-      }
-    }
-  });
-};
-
 projectView.handleCategoryFilter = function() {
   $('#category-filter').on('change', function(e) {
     if ($(this).val()) {
