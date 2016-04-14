@@ -14,7 +14,7 @@
 
     <script id="project-template" type="text/x-handlebars-template">
         <article class="article-box" data-category="{{category}}">
-          <h2>Posted {{publishStatus}}</h2>
+          <h2>{{publishStatus}}</h2>
           <a href="" class="project-url"><h1>{{title}}</h1></a>
           <section class="project-body">{{{projectBody}}}</section>
           <a href="#" class="read-on">Continue Reading</a>
@@ -47,15 +47,11 @@
     </nav>
     <main>
       <section id="projects" class="tab-content">
-        <ul class="filters">
-          <li>
-            <div class="styled-select">
+            <div class="styled-select filters">
               <select id="category-filter">
-                <option value="">-- Filter by Categories --</option>
+                <option value="">Filter by Category </option>
                 </select>
               </div>
-            </li>
-          </ul>
       </section>
       <section id="about" class="tab-content">
         <h1>About Stefanie</h1>

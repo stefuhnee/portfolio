@@ -2,10 +2,10 @@ header h1 {
   font-weight: normal;
   font-size: 17vmin;
   display: inline-block;
-  position: relative;
   z-index: 10;
-  top: 1vmin;
-  float: left;
+  margin: 0;
+  position: relative;
+  top: 10vmin;
 }
 
 section {
@@ -49,6 +49,11 @@ nav.social ul, nav.main-nav ul {
   list-style: none;
 }
 
+nav.main-nav ul {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 nav.social li, nav.main-nav li {
   display: inline;
 }
@@ -59,17 +64,18 @@ nav.main-nav li {
 
 nav.social {
   text-align: right;
-  font-size: 4vmin;
+  font-size: 5vmin;
   position: relative;
-  top: 7vmin;
 }
 
 nav.main-nav {
   font-size: 1.5rem;
   background-color: #a6a376;
   text-align:center;
-  position: relative;
-  bottom: 2em;
+  margin-bottom: 4vmin;
+  display: table;
+  height: 10vmin;
+
 }
 
 .article-box {
@@ -91,7 +97,7 @@ nav.main-nav {
 }
 
 .article-box h1 {
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
   width: 100%;
   display: inline-block;
