@@ -7,7 +7,6 @@ projectView.handleCategoryFilter = function() {
       $('article[data-category="' + $(this).val() + '"]').show();
     } else {
       $('article').show();
-      $('article.template').hide();
     }
   });
 };

@@ -16,6 +16,11 @@ Project.prototype.toHTML = function() {
   return template(this);
 };
 
+Project.prototype.filterCategoriesToHtml = function() {
+  var template = Handlebars.compile($('#category-filter-template').html());
+  return template(this);
+};
+
 portfolioProjects.sort(function(a,b) {
   return (new Date(b.postDate)) - (new Date(a.postDate));
 });
@@ -26,4 +31,5 @@ portfolioProjects.forEach(function(ele) {
 
 projects.forEach(function(a) {
   $('#projects').append(a.toHTML());
+  $('#category-filter').append(a.filterCategoriesToHtml());
 });

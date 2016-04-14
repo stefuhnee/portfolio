@@ -13,18 +13,18 @@
     <link rel="stylesheet" type="text/css" href="styles/state.css">
 
     <script id="project-template" type="text/x-handlebars-template">
-        <div class="article-box">
+        <article class="article-box" data-category="{{category}}">
           <h2>Posted {{publishStatus}}</h2>
           <a href="" class="project-url"><h1>{{title}}</h1></a>
           <section class="project-body">{{{projectBody}}}</section>
           <a href="#" class="read-on">Continue Reading</a>
           <a href="#" class="read-less">Less</a>
-        </div>
+        </article>
       </script>
 
-    <!-- <script>
-    <option value="">-- Filter by Categories --</option>
-    </script> -->
+      <script id="category-filter-template" type="text/x-handlebars-template">
+            <option value="{{category}}">{{category}}</option>
+      </script>
 
   </head>
   <body>
