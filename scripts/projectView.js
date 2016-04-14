@@ -15,7 +15,7 @@ projectView.populateFilter = function() {
 };
 
 projectView.handleCategoryFilter = function() {
-  $('#category-filter').on('change', function() {
+  $('#category-filter').on('change', function(e) {
     if ($(this).val()) {
       $('article').hide();
       $('article[data-category="' + $(this).val() + '"]').show();
