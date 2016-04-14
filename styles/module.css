@@ -119,3 +119,7 @@ nav.main-nav {
 .article-box a {
   color: #a6a376;
 }
+
+.filters {
+  list-style: none;
+}

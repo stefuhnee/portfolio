@@ -12,21 +12,19 @@
     <link rel="stylesheet" type="text/css" href="styles/module.css">
     <link rel="stylesheet" type="text/css" href="styles/state.css">
 
-    <script id="article-template" type="text/x-handlebars-template">
-        <article class="template" data-category="{{category}}">
-          <div class="article-box">
-            <h2>Posted {{publishStatus}}</h2>
-            <a href="" class="project-url"><h1>{{title}}</h1></a>
-            <section class="project-body">{{body}}</section>
-            <a href="#" class="read-on">Continue Reading</a>
-            <a href="#" class="read-less">Less</a>
-            </div>
-          </article>
-        </script>
+    <script id="project-template" type="text/x-handlebars-template">
+        <div class="article-box">
+          <h2>Posted {{publishStatus}}</h2>
+          <a href="" class="project-url"><h1>{{title}}</h1></a>
+          <section class="project-body">{{{projectBody}}}</section>
+          <a href="#" class="read-on">Continue Reading</a>
+          <a href="#" class="read-less">Less</a>
+        </div>
+      </script>
 
-    <script>
+    <!-- <script>
     <option value="">-- Filter by Categories --</option>
-    </script>
+    </script> -->
 
   </head>
   <body>
@@ -66,6 +64,7 @@
       </footer>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="scripts/projects.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/projectView.js"></script>

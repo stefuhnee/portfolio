@@ -9,17 +9,11 @@ function Project (properties) {
 }
 
 Project.prototype.toHTML = function() {
-  var $newProject = $('article.template').clone();
+  var template = Handlebars.compile($('#project-template').html());
 
-  $newProject.attr('data-category', this.category);
-  $newProject.find('h1').text(this.title);
-  $newProject.find('.project-body').html(this.projectBody);
-  $newProject.find('.project-url').attr('href', this.location);
-  $newProject.find('time[postDate]').attr('title', this.postDate);
-  $newProject.find('time').html(parseInt((new Date() - new Date(this.postDate))/60/60/24/1000) + ' days ago');
-
-  $newProject.removeClass('template');
-  return $newProject;
+  this.daysAgo = parseInt((new Date() - new Date(this.postDate))/60/60/24/1000);
+  this.publishStatus = this.postDate ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
+  return template(this);
 };
 
 portfolioProjects.sort(function(a,b) {

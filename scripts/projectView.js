@@ -41,7 +41,6 @@ projectView.setTeasers = function() {
 };
 
 $(document).ready(function() {
-  projectView.populateFilter();
   projectView.handleCategoryFilter();
   projectView.handleMainNav();
   projectView.setTeasers();
