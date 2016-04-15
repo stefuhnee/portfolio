@@ -22,17 +22,17 @@ footer span {
   margin: 0 auto;
 }
 
-.project-body {
+.project-body, #about {
   margin-top: 2em;
   position: relative;
   text-align: center;
 }
 
-.project-body p {
+.project-body p, #about p {
   text-align: left;
 }
 
-.article-box {
+.article-box, #about {
   width: 96%;
   margin-top: 1em;
   border: 1px solid black;
@@ -91,9 +91,8 @@ nav.main-nav {
   font-size: 3.75vw;
 }
 
-.article-box h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: lighter;
+.article-box h1, #about h1 {
+  font-family: 'Oswald Light', sans-serif;
   width: 100%;
   display: inline-block;
   font-size: 6.665vw;
@@ -107,6 +106,7 @@ nav.main-nav {
   display: inline-block;
   font-size: 2.815vmin;
   font-style: italic;
+  margin-top: 0.25em;
 }
 
 .article-box p {
@@ -134,4 +134,32 @@ nav.main-nav {
 
 .styled-select select:focus, .style-select select option:focus {
   outline: none;
+}
+
+@media (min-width: 400px) {
+  body {
+    margin: 0 4%;
+  }
+  .article-box p {
+    font-size: 1.2em;
+  }
+  .article-box h1 {
+    font-size: 2em;
+  }
+  .article-box .read-on, .article-box .read-less {
+    font-size: 1.1em;
+    min-width: 39%;
+  }
+  .article-box h2 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px)  {
+  .article-box .read-on, .article-box .read-less {
+    min-width: 25%;
+  }
+  .article-box h2 {
+    float: right;
+  }
 }
