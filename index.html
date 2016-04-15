@@ -13,18 +13,18 @@
     <link rel="stylesheet" type="text/css" href="styles/state.css">
 
     <script id="project-template" type="text/x-handlebars-template">
-        <article class="article-box" data-category="{{category}}">
-          <h2>{{publishStatus}}</h2>
-          <a href="" class="project-url"><h1>{{title}}</h1></a>
-          <section class="project-body">{{{projectBody}}}</section>
-          <a href="#" class="read-on">Continue Reading</a>
-          <a href="#" class="read-less">Less</a>
-        </article>
-      </script>
+      <article class="article-box" data-category="{{category}}">
+        <a href="" class="project-url"><h1>{{title}}</h1></a>
+        <h2>{{publishStatus}}</h2>
+        <section class="project-body">{{{projectBody}}}</section>
+        <a href="#" class="read-on">Continue Reading</a>
+        <a href="#" class="read-less">Less</a>
+      </article>
+    </script>
 
-      <script id="category-filter-template" type="text/x-handlebars-template">
-            <option value="{{category}}">{{category}}</option>
-      </script>
+    <script id="category-filter-template" type="text/x-handlebars-template">
+      <option value="{{category}}">{{category}}</option>
+    </script>
 
   </head>
   <body>
@@ -47,11 +47,11 @@
     </nav>
     <main>
       <section id="projects" class="tab-content">
-            <div class="styled-select filters">
-              <select id="category-filter">
-                <option value="">Filter by Category </option>
-                </select>
-              </div>
+        <div class="styled-select filters">
+          <select id="category-filter">
+            <option value="">Filter by Category </option>
+          </select>
+        </div>
       </section>
       <section id="about" class="tab-content">
         <h1>About Stefanie</h1>

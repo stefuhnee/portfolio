@@ -1,6 +1,6 @@
 header h1 {
   font-weight: normal;
-  font-size: 17vmin;
+  font-size: 15.785vmin;
   display: inline-block;
   z-index: 10;
   margin: 0;
@@ -18,12 +18,12 @@ footer span {
 }
 
 .project-body img {
-  margin-top: 2em;
   max-width: 100%;
   margin: 0 auto;
 }
 
 .project-body {
+  margin-top: 2em;
   position: relative;
   text-align: center;
 }
@@ -69,7 +69,7 @@ nav.social {
 }
 
 nav.main-nav {
-  font-size: 1.5rem;
+  font-size: 5vmin;
   background-color: #a6a376;
   text-align:center;
   margin-bottom: 4vmin;
@@ -86,14 +86,9 @@ nav.main-nav {
   color: #a6a376;
   display: block;
   padding-bottom: 2px;
-  border: 1px solid black;
-  border-bottom: 0;
-  width: 17%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   margin: 0 auto;
   min-width: 30%;
-  font-size: 3vw;
+  font-size: 3.75vw;
 }
 
 .article-box h1 {
@@ -101,25 +96,22 @@ nav.main-nav {
   font-weight: lighter;
   width: 100%;
   display: inline-block;
-  font-size: 6vw;
+  font-size: 6.665vw;
   color: #a6a376;
   position: relative;
+  margin-top: 0.5em;
 }
 
 .article-box h2 {
   font-weight: lighter;
   display: inline-block;
-  font-size: 3vmin;
-  color: #000;
-  float: right;
-  margin-top: .5em;
+  font-size: 2.815vmin;
   font-style: italic;
 }
 
 .article-box p {
-  font-size: 3.5vw;
+  font-size: 3.75vw;
   position: relative;
-  clear: both;
 }
 
 .article-box a {
@@ -133,7 +125,7 @@ nav.main-nav {
 .styled-select select {
   position: relative;
   bottom: 2vmin;
-  font-size: 1rem;
+  font-size: 3.75vmin;
   width: 100%;
   background-color:#f2f2f2;
   border: 0;

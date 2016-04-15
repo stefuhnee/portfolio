@@ -37,4 +37,7 @@ nav.social li:hover {
   .article-box .read-on, .article-box .read-less {
     min-width: 25%;
   }
+  .article-box h2 {
+    float: right;
+  }
 }
