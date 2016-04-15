@@ -8,22 +8,17 @@ function Project (properties) {
   this.location = properties.location;
 }
 
-Project.prototype.lightBox = function() {
-  $('.article-box a').on('click', function() {
-    $('.article-box').hide();
-  });
-}
+// Project.prototype.lightBox = function() {
+//   $('.article-box a').on('click', function() {
+//     $('.article-box').hide();
+//   });
+// };
 
-Project.prototype.toHTML = function() {
-  var template = Handlebars.compile($('#project-template').html());
+Project.prototype.toHTML = function(template) {
+  var template = Handlebars.compile($(template).html());
 
   this.daysAgo = parseInt((new Date() - new Date(this.postDate))/60/60/24/1000);
   this.publishStatus = this.postDate ? 'Posted ' + this.daysAgo + ' days ago' : '(draft)';
-  return template(this);
-};
-
-Project.prototype.filterCategoriesToHtml = function() {
-  var template = Handlebars.compile($('#category-filter-template').html());
   return template(this);
 };
 
@@ -36,6 +31,6 @@ portfolioProjects.forEach(function(ele) {
 });
 
 projects.forEach(function(a) {
-  $('#projects').append(a.toHTML());
-  $('#category-filter').append(a.filterCategoriesToHtml());
+  $('#projects').append(a.toHTML('#project-template'));
+  $('#category-filter').append(a.toHTML('#category-filter-template'));
 });
