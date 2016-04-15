@@ -8,18 +8,23 @@ function Project (properties) {
   this.location = properties.location;
 }
 
+Project.prototype.lightBox = function() {
+  $('.article-box a').on('click', function() {
+    $('.article-box').hide();
+  });
+}
+
 Project.prototype.toHTML = function() {
-  var $newProject = $('article.template').clone();
+  var template = Handlebars.compile($('#project-template').html());
 
-  $newProject.attr('data-category', this.category);
-  $newProject.find('h1').text(this.title);
-  $newProject.find('.project-body').html(this.projectBody);
-  $newProject.find('.project-url').attr('href', this.location);
-  $newProject.find('time[postDate]').attr('title', this.postDate);
-  $newProject.find('time').html(parseInt((new Date() - new Date(this.postDate))/60/60/24/1000) + ' days ago');
+  this.daysAgo = parseInt((new Date() - new Date(this.postDate))/60/60/24/1000);
+  this.publishStatus = this.postDate ? 'Posted ' + this.daysAgo + ' days ago' : '(draft)';
+  return template(this);
+};
 
-  $newProject.removeClass('template');
-  return $newProject;
+Project.prototype.filterCategoriesToHtml = function() {
+  var template = Handlebars.compile($('#category-filter-template').html());
+  return template(this);
 };
 
 portfolioProjects.sort(function(a,b) {
@@ -32,4 +37,5 @@ portfolioProjects.forEach(function(ele) {
 
 projects.forEach(function(a) {
   $('#projects').append(a.toHTML());
+  $('#category-filter').append(a.filterCategoriesToHtml());
 });

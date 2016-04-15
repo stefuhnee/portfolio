@@ -6,11 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="vendor/styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/fonts.css">
-    <link href="http://fonts.googleapis.com/css?family=Cardo|Montserrat|Lobster" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Cardo|Montserrat|Lobster+Two|Pontano+Sans|Oswald+Light|Merriweather|Lato" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/layout.css">
     <link rel="stylesheet" type="text/css" href="styles/module.css">
     <link rel="stylesheet" type="text/css" href="styles/state.css">
+
+    <script id="project-template" type="text/x-handlebars-template">
+      <article class="article-box" data-category="{{category}}">
+        <a href="{{location}}" class="{project-url}"><h1>{{title}}</h1></a>
+        <h2>{{publishStatus}}</h2>
+        <section class="project-body">{{{projectBody}}}</section>
+        <a href="#" class="read-on">Continue Reading</a>
+        <a href="#" class="read-less">Less</a>
+      </article>
+    </script>
+
+    <script id="category-filter-template" type="text/x-handlebars-template">
+      <option value="{{category}}">{{category}}</option>
+    </script>
+
   </head>
   <body>
     <header>
@@ -32,23 +47,11 @@
     </nav>
     <main>
       <section id="projects" class="tab-content">
-        <ul class="filters">
-          <li>
-              <select id="category-filter">
-                <option value="">-- Filter by Categories --</option>
-              </select>
-            </li>
-          </ul>
-        <article class="template" data-category="cat">
-          <div class="article-box">
-            <h2>Posted <time postdate datetime="2000-01-01">Date Posted</time></h2>
-            <a href="" class="project-url"><h1>Title</h1></a>
-            <section class="project-body">
-            </section>
-            <a href="#" class="read-on">Continue Reading</a>
-            <a href="#" class="read-less">Less</a>
-          </div>
-        </article>
+        <div class="styled-select filters">
+          <select id="category-filter">
+            <option value="">Filter by Category </option>
+          </select>
+        </div>
       </section>
       <section id="about" class="tab-content">
         <h1>About Stefanie</h1>
@@ -59,6 +62,7 @@
       </footer>
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="scripts/projects.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/projectView.js"></script>

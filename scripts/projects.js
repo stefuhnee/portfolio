@@ -4,7 +4,7 @@ var portfolioProjects = [
     postDate: '2016-03-23',
     category: 'lab',
     location: 'http://stefuhnee.github.io/pizza-odyssey/',
-    projectBody: '<img src="img/pizza.png" /> <p>I created this website during the second week of Code 201 at Code Fellows. Most of the main functionality was implemented in <a href="http://stefuhnee.github.io/pizza-odyssey/sales-data.html">another page</a> which allows the user to enter location-specific sales data for a fictional pizza store.</p>'
+    projectBody: '<a href="http://stefuhnee.github.io/pizza-odyssey/sales-data.html" target="blank"><img src="img/pizza.png" /></a> <p>I created this website during the second week of Code 201 at Code Fellows. Most of the main functionality was implemented in <a href="http://stefuhnee.github.io/pizza-odyssey/sales-data.html">another page</a> which allows the user to enter location-specific sales data for a fictional pizza store.</p>'
   },
   {
     title: 'Portfolio Project',

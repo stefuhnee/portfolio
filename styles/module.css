@@ -1,11 +1,11 @@
 header h1 {
   font-weight: normal;
-  font-size: 15vmin;
+  font-size: 15.785vmin;
   display: inline-block;
-  position: relative;
   z-index: 10;
-  top: .75em;
-  right: 1.8em;
+  margin: 0;
+  position: relative;
+  top: 10vmin;
 }
 
 section {
@@ -18,21 +18,21 @@ footer span {
 }
 
 .project-body img {
-  margin-top: 2em;
   max-width: 100%;
   margin: 0 auto;
 }
 
-.project-body {
+.project-body, #about {
+  margin-top: 2em;
   position: relative;
   text-align: center;
 }
 
-.project-body p {
+.project-body p, #about p {
   text-align: left;
 }
 
-.article-box {
+.article-box, #about {
   width: 96%;
   margin-top: 1em;
   border: 1px solid black;
@@ -49,27 +49,33 @@ nav.social ul, nav.main-nav ul {
   list-style: none;
 }
 
+nav.main-nav ul {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 nav.social li, nav.main-nav li {
   display: inline;
 }
 
 nav.main-nav li {
-  padding: 0 1vmin;
+  padding: 0 1rem;
 }
 
 nav.social {
   text-align: right;
-  font-size: 3.5vmin;
+  font-size: 5vmin;
   position: relative;
-  top: 5em;
 }
 
 nav.main-nav {
   font-size: 5vmin;
   background-color: #a6a376;
   text-align:center;
-  position: relative;
-  bottom: 2em;
+  margin-bottom: 4vmin;
+  display: table;
+  height: 10vmin;
+
 }
 
 .article-box {
@@ -80,42 +86,80 @@ nav.main-nav {
   color: #a6a376;
   display: block;
   padding-bottom: 2px;
-  border: 1px solid black;
-  border-bottom: 0;
-  width: 17%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
   margin: 0 auto;
   min-width: 30%;
-  font-size: 3vw;
+  font-size: 3.75vw;
 }
 
-.article-box h1 {
-  font-family: 'Fjalla One', sans-serif;
-  font-weight: lighter;
+.article-box h1, #about h1 {
+  font-family: 'Merriweather', sans-serif;
   width: 100%;
   display: inline-block;
-  font-size: 6vw;
+  font-size: 6.665vmin;
   color: #a6a376;
   position: relative;
+  margin-top: 0.5em;
 }
 
 .article-box h2 {
   font-weight: lighter;
   display: inline-block;
-  font-size: 3vmin;
-  color: #000;
-  float: right;
-  margin-top: .5em;
+  font-size: 2.815vmin;
   font-style: italic;
+  margin-top: 0.25em;
 }
 
 .article-box p {
-  font-size: 3.5vw;
+  font-size: 3.75vw;
   position: relative;
-  clear: both;
 }
 
 .article-box a {
   color: #a6a376;
+}
+
+.filters {
+  list-style: none;
+}
+
+.styled-select select {
+  position: relative;
+  bottom: 2vmin;
+  font-size: 3.75vmin;
+  width: 100%;
+  background-color:#f2f2f2;
+  border: 0;
+  outline: none;
+}
+
+.styled-select select:focus, .style-select select option:focus {
+  outline: none;
+}
+
+@media (min-width: 400px) {
+  body {
+    margin: 0 4%;
+  }
+  .article-box p {
+    font-size: 1.2em;
+  }
+  .article-box h1 {
+    font-size: 2em;
+  }
+  .article-box .read-on, .article-box .read-less {
+    font-size: 1.1em;
+    min-width: 39%;
+  }
+  .article-box h2 {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 768px)  {
+  .article-box .read-on, .article-box .read-less {
+    min-width: 25%;
+  }
+  .article-box h2 {
+    float: right;
+  }
 }
