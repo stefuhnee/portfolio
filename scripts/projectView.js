@@ -38,9 +38,17 @@ projectView.setTeasers = function() {
     $(this).hide();
   });
 };
+//
+// projectView.lightBox = function() {
+//   $('.article-box a').on('click', function(e) {
+//     e.preventDefault();
+//     $('.article-box').fadeTo('1', '0.1');
+//   });
+// };
 
 $(document).ready(function() {
   projectView.handleCategoryFilter();
   projectView.handleMainNav();
   projectView.setTeasers();
+  // projectView.lightBox();
 });

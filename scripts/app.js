@@ -8,6 +8,12 @@ function Project (properties) {
   this.location = properties.location;
 }
 
+Project.prototype.lightBox = function() {
+  $('.article-box a').on('click', function() {
+    $('.article-box').hide();
+  });
+}
+
 Project.prototype.toHTML = function() {
   var template = Handlebars.compile($('#project-template').html());
 
