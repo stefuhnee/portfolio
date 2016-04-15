@@ -1,4 +1,4 @@
-var projects = [];
+var projects = [], categories = [];
 
 function Project (properties) {
   this.title = properties.title;
@@ -32,5 +32,8 @@ portfolioProjects.forEach(function(ele) {
 
 projects.forEach(function(a) {
   $('#projects').append(a.toHTML('#project-template'));
-  $('#category-filter').append(a.toHTML('#category-filter-template'));
+  if (categories.indexOf(a.category)) {
+    $('#category-filter').append(a.toHTML('#category-filter-template'));
+    categories.push(a.category);
+  };
 });
