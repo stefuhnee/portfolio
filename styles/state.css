@@ -2,6 +2,10 @@ a:hover {
   color: #000;
 }
 
+.article-box h1:hover {
+  color: #000;
+}
+
 .article-box .read-on:hover, .article-box .read-less:hover {
   color: #000;
 }

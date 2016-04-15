@@ -92,10 +92,10 @@ nav.main-nav {
 }
 
 .article-box h1, #about h1 {
-  font-family: 'Oswald Light', sans-serif;
+  font-family: 'Merriweather', sans-serif;
   width: 100%;
   display: inline-block;
-  font-size: 6.665vw;
+  font-size: 6.665vmin;
   color: #a6a376;
   position: relative;
   margin-top: 0.5em;

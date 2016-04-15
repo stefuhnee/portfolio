@@ -1,6 +1,7 @@
 body {
   background-color: #d1d7bb;
-  font-family: 'Pontano Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-weight: lighter;
   margin: 0 2%;
 }
 
@@ -27,7 +28,7 @@ a {
 }
 
 nav {
-  font-family: "Oswald Light", sans-serif;
+  font-family: "Merriweather", sans-serif;
   font-weight: bold;
   width: 100%;
   clear: both;
