@@ -9,10 +9,6 @@ section {
   max-width: 100%;
 }
 
-footer span {
-  margin-right: 1em;
-}
-
 .project-body img {
   max-width: 100%;
   margin: 0 auto;
@@ -34,7 +30,7 @@ footer span {
   border: 1px solid black;
   padding: 0 2% 0 2%;
   position: relative;
-  background-color: #f2f2f2;
+  background-color: #fafafa;
 }
 
 .article-box h1, .article-box h2 {
@@ -48,6 +44,9 @@ nav.social ul, nav.main-nav ul {
 nav.main-nav ul {
   display: table-cell;
   vertical-align: middle;
+  padding:  0;
+  margin:  0;
+  display: inline-block;
 }
 
 nav.social li, nav.main-nav li {
@@ -55,7 +54,9 @@ nav.social li, nav.main-nav li {
 }
 
 nav.main-nav li {
-  padding: 0 1rem;
+  padding: 0 .5rem;
+  height:  100%;
+  display:  inline-block;
 }
 
 nav.social {
@@ -64,25 +65,25 @@ nav.social {
   position: fixed;
   bottom:  0;
   z-index:  1;
-  background-color:  green;
+  background-color: #d1d1d1;
 }
 
 nav.main-nav {
   font-size: 5vmin;
-  background-color: #a6a376;
+  background-color: #d1d1d1;
   text-align:center;
   display: table;
-  height: 10vmin;
   position:  fixed;
+  z-index: 5;
   top:  0;
 }
 
 .article-box {
-  background-color: #f2f2f2;
+  background-color: #fafafa;
 }
 
 .article-box .read-on, .article-box .read-less {
-  color: #a6a376;
+  color: #f1986b;
   display: block;
   padding-bottom: 2px;
   margin: 0 auto;
@@ -95,7 +96,7 @@ nav.main-nav {
   width: 100%;
   display: inline-block;
   font-size: 6.665vmin;
-  color: #a6a376;
+  color: #f1986b;
   position: relative;
   margin-top: 0.5em;
 }
@@ -114,7 +115,7 @@ nav.main-nav {
 }
 
 .article-box a {
-  color: #a6a376;
+  color: #f1986b;
 }
 
 .filters {
@@ -126,8 +127,8 @@ nav.main-nav {
   bottom: 2vmin;
   font-size: 3.75vmin;
   width: 100%;
-  background-color:#f2f2f2;
-  border: 0;
+  background-color: #fafafa;
+  border: 1px solid black;
   outline: none;
 }
 

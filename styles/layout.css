@@ -1,8 +1,9 @@
 body {
-  background-color: #d1d7bb;
+  background-color: #fafcfd;
   font-family: 'Lato', sans-serif;
   font-weight: lighter;
   width:  100%;
+  color: #303030;
 }
 
 header {
@@ -14,10 +15,17 @@ header {
   margin:  0 auto;
 }
 
+main {
+  width: 96%;
+  margin: 0 auto 5% auto;
+}
+
 footer {
-  background-color: #a6a376;
+  background-color: #fafafa;
   width: 100%;
   text-align: right;
+  margin: 2% auto 10% auto;
+  padding:  0;
 }
 
 ul {
@@ -26,8 +34,6 @@ ul {
 }
 
 a {
-  text-decoration: none;
-  color: #f2f2f2;
 }
 
 nav {

@@ -1,6 +1,4 @@
-a:hover {
-  color: #000;
-}
+a:hover {}
 
 .article-box h1:hover {
   color: #000;
@@ -12,4 +10,8 @@ a:hover {
 
 .template {
   display: none;
+}
+
+.main-nav li:hover {
+  background-color: #f1986b;
 }
