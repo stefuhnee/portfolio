@@ -1,11 +1,14 @@
 var projects = [], categories = [];
 
 function Project (properties) {
-  this.title = properties.title;
-  this.postDate = properties.postDate;
-  this.projectBody = properties.projectBody;
-  this.category = properties.category;
-  this.location = properties.location;
+  for (key in properties) {
+    this[key] = properties[key];
+  }
+  // this.title = properties.title;
+  // this.postDate = properties.postDate;
+  // this.projectBody = properties.projectBody;
+  // this.category = properties.category;
+  // this.location = properties.location;
 }
 
 // Project.prototype.lightBox = function() {
