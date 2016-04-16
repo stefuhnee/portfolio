@@ -1,8 +1,8 @@
 var projects = [], categories = [];
 
-function Project (properties) {
-  for (key in properties) {
-    this[key] = properties[key];
+function Project (projects) {
+  for (key in projects) {
+    this[key] = projects[key];
   };
 };
 
