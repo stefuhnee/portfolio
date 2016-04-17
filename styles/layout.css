@@ -7,17 +7,19 @@ body {
 }
 
 header {
-  font-family: "Lobster Two", sans-serif;
+  font-family: "Herr Von Muellerhoff", sans-serif;
   position: relative;
   z-index:  3;
   width:  96%;
-  text-align: left;
+  text-align: center;
   margin:  0 auto;
 }
 
 main {
   width: 96%;
   margin: 0 auto 5% auto;
+  position:  relative;
+  bottom: 1rem;
 }
 
 footer {
