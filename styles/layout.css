@@ -5,6 +5,7 @@ body {
 header {
   margin:  0 auto;
   position: relative;
+  height: 32vmin;
   z-index:  3;
   width:  96%;
   margin: 2rem auto 0 auto;
@@ -12,16 +13,12 @@ header {
 
 header h1 {
   margin: 0 auto;
+  padding: 0;
 }
 
 header h2 {
   position: absolute;
   right: 0;
-}
-
-h1 {
-  padding: 0;
-  margin: 0;
 }
 
 main {
@@ -57,6 +54,7 @@ nav {
 
 .article-box h1 {
   margin-top: 0.5rem;
+  margin-bottom: 0;
 }
 
 .article-box h2 {
@@ -80,7 +78,6 @@ nav.main-nav ul {
   vertical-align: middle;
   padding:  0;
   margin:  0;
-  display: inline-block;
 }
 
 nav.main-nav li {
@@ -92,6 +89,22 @@ nav.social {
   position: fixed;
   bottom:  0;
   z-index:  1;
+  height: 7%;
+  text-align: center;
+  display: table;
+}
+
+nav.social ul {
+height: 100%;
+display: table-cell;
+vertical-align: middle;
+padding: 0;
+}
+
+nav.social li {
+  height: 100%;
+  padding: 0 .4rem;
+  display: inline-block;
 }
 
 .article-box .read-on, .article-box .read-less {
@@ -100,16 +113,13 @@ nav.social {
   min-width: 30%;
 }
 
-.styled-select select {
-  width: 100%;
-}
-
 .article-box, #about {
   width: 96%;
   padding: 2% 2% 0 2%;
 }
 
 .filters {
+  top: 0;
+  position: absolute;
   float: right;
-  width: 30%;
 }

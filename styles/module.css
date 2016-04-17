@@ -5,14 +5,15 @@ header {
 header h1 {
   font-family: "Herr Von Muellerhoff", sans-serif;
   font-weight: normal;
-  font-size: 25vmin;
+  font-size: 28vmin;
   display: inline-block;
 }
 
 header h2 {
   font-family: 'Unica One';
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 4vmin;
+  margin: 2%, 0, 0, 0
 }
 
 section {
@@ -76,7 +77,7 @@ nav.main-nav {
 
 .article-box h2 {
   font-weight: lighter;
-  display: inline-block;
+  display: block;
   font-size: 2.815vmin;
   font-style: italic;
 }
@@ -99,22 +100,12 @@ nav.main-nav {
   position: relative;
   display: block;
   list-style: none;
+  font-size: 3vmin;
 }
 
 .filters a {
   text-decoration: none;
   color: #f1986b;
-}
-
-.styled-select select {
-  font-size: 3.75vmin;
-  background-color: #fafafa;
-  border: 1px solid black;
-  outline: none;
-}
-
-.styled-select select:focus, .style-select select option:focus {
-  outline: none;
 }
 
 @media (min-width: 400px) {
@@ -140,6 +131,16 @@ nav.main-nav {
     min-width: 25%;
   }
   .article-box h2 {
-    float: right;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+  }
+
+  .article-box {
+    position: relative;
+  }
+
+  .project-body {
+    margin-top: 5vmin;
   }
 }

@@ -40,10 +40,12 @@ projectView.handleFilterNav = function() {
   $('.filters').hide();
   $('.filter-heading').on('click', function() {
     $(this).hide();
-    $('.filters').slideToggle();
-    $('.filter-exit').on('click', function() {
-      $('.filters').slideToggle();
-    });
+    $('.filters').slideToggle('slow');
+  });
+  $('.filter-exit').on('click', function() {
+    $('.filters').slideToggle('fast');
+    $('.filter-heading').fadeIn('slow');
+    $('.article-box').show();
   });
 };
 

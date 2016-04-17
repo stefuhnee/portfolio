@@ -16,6 +16,6 @@ a:hover {}
   background-color: #f1986b
 }
 
-.social a:hover {
+.social li:hover {
   background-color: #f1986b;
 }
