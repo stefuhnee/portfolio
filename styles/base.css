@@ -1,19 +1,16 @@
 body {
-  background-color: #d1d7bb;
-  font-family: 'Lato', sans-serif;
+  background-color: #fafcfd;
+  font-family: 'Vollkorn', sans-serif;
   font-weight: lighter;
-  width:  100%;
+  color: #303030;
 }
 
-header {
-  font-family: "Herr Von Muellerhoff", sans-serif;
-  position: relative;
+h1 {
+  font-family: 'Unica One';
 }
 
-footer {
-  background-color: #a6a376;
-  width: 100%;
-  text-align: right;
+h2 {
+  
 }
 
 ul {
@@ -27,8 +24,7 @@ a {
 }
 
 nav {
-  font-family: "Merriweather", sans-serif;
+  font-family: "Unica One", sans-serif;
   font-weight: bold;
-  width: 100%;
-  clear: both;
+  text-transform: uppercase;
 }

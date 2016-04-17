@@ -1,22 +1,23 @@
+header {
+  text-align: center;
+}
+
 header h1 {
+  font-family: "Herr Von Muellerhoff", sans-serif;
   font-weight: normal;
   font-size: 25vmin;
-  margin: 2rem auto 0 auto;
 }
 
 section {
   text-align: center;
-  max-width: 100%;
 }
 
-.project-body img {
-  max-width: 100%;
-  margin: 0 auto;
+footer {
+  text-align: right;
+  background-color: #fafafa;
 }
 
 .project-body, #about {
-  margin-top: 2em;
-  position: relative;
   text-align: center;
 }
 
@@ -25,46 +26,21 @@ section {
 }
 
 .article-box, #about {
-  width: 96%;
-  margin-top: 1em;
   border: 1px solid black;
-  padding: 0 2% 0 2%;
-  position: relative;
   background-color: #fafafa;
-}
-
-.article-box h1, .article-box h2 {
-  margin: 0;
 }
 
 nav.social ul, nav.main-nav ul {
   list-style: none;
 }
 
-nav.main-nav ul {
-  display: table-cell;
-  vertical-align: middle;
-  padding:  0;
-  margin:  0;
-  display: inline-block;
-}
-
 nav.social li, nav.main-nav li {
   display: inline;
-}
-
-nav.main-nav li {
-  padding: 0 .5rem;
-  height:  100%;
-  display:  inline-block;
 }
 
 nav.social {
   text-align: center;
   font-size: 5vmin;
-  position: fixed;
-  bottom:  0;
-  z-index:  1;
   background-color: #d1d1d1;
 }
 
@@ -73,9 +49,6 @@ nav.main-nav {
   background-color: #d1d1d1;
   text-align:center;
   display: table;
-  position:  fixed;
-  z-index: 5;
-  top:  0;
 }
 
 .article-box {
@@ -85,20 +58,14 @@ nav.main-nav {
 .article-box .read-on, .article-box .read-less {
   color: #f1986b;
   display: block;
-  padding-bottom: 2px;
-  margin: 0 auto;
-  min-width: 30%;
   font-size: 3.75vw;
 }
 
 .article-box h1, #about h1 {
-  font-family: 'Merriweather', sans-serif;
-  width: 100%;
-  display: inline-block;
+  /*font-family: 'Merriweather', sans-serif;*/
   font-size: 6.665vmin;
   color: #f1986b;
-  position: relative;
-  margin-top: 0.5em;
+  text-transform: uppercase;
 }
 
 .article-box h2 {
@@ -106,7 +73,6 @@ nav.main-nav {
   display: inline-block;
   font-size: 2.815vmin;
   font-style: italic;
-  margin-top: 0.25em;
 }
 
 .article-box p {
@@ -123,10 +89,7 @@ nav.main-nav {
 }
 
 .styled-select select {
-  position: relative;
-  bottom: 2vmin;
   font-size: 3.75vmin;
-  width: 100%;
   background-color: #fafafa;
   border: 1px solid black;
   outline: none;

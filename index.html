@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="vendor/styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/fonts.css">
-    <link href="http://fonts.googleapis.com/css?family=Cardo|Montserrat|Lobster+Two|Pontano+Sans|Oswald+Light|Merriweather|Lato" rel="stylesheet" type="text/css" />
-    <link href='https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Vollkorn|Unica+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/layout.css">
     <link rel="stylesheet" type="text/css" href="styles/module.css">
@@ -23,8 +22,12 @@
       </article>
     </script>
 
-    <script id="category-filter-template" type="text/x-handlebars-template">
+    <!-- <script id="category-filter-template" type="text/x-handlebars-template">
       <option value="{{category}}">{{category}}</option>
+    </script> -->
+
+    <script id="category-filter-template" type="text/x-handlebars-template">
+      <li>{{category}}</li>
     </script>
 
   </head>
@@ -48,11 +51,20 @@
     </nav>
     <main>
       <section id="projects" class="tab-content">
-        <div class="styled-select filters">
+
+        <!-- <div class="styled-select filters">
           <select id="category-filter">
             <option value="">Filter by Category </option>
           </select>
-        </div>
+        </div> -->
+
+        <nav class="filters">
+          <h2>Choose a category</h2>
+          <ul>
+          </ul>
+        </nav>
+
+
       </section>
       <section id="about" class="tab-content">
         <h1>About Stefanie</h1>

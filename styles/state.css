@@ -13,5 +13,9 @@ a:hover {}
 }
 
 .main-nav li:hover {
+  background-color: #f1986b
+}
+
+.social a:hover {
   background-color: #f1986b;
 }

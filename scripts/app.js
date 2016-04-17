@@ -6,12 +6,6 @@ function Project (projects) {
   };
 };
 
-// Project.prototype.lightBox = function() {
-//   $('.article-box a').on('click', function() {
-//     $('.article-box').hide();
-//   });
-// };
-
 Project.prototype.toHTML = function(template) {
   var template = Handlebars.compile($(template).html());
 
