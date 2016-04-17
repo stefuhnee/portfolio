@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="vendor/styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/fonts.css">
-    <link href='https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Vollkorn|Unica+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Open+Sans+Condensed|Playfair+Display' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/layout.css">
     <link rel="stylesheet" type="text/css" href="styles/module.css">
@@ -14,8 +14,13 @@
 
     <script id="project-template" type="text/x-handlebars-template">
       <article class="article-box" data-category="{{category}}">
-        <a href="{{location}}" class="{project-url}"><h1>{{title}}</h1></a>
+        <a href="{{location}}" class="project-url"><h1>{{title}}</h1></a>
         <h2>{{publishStatus}}</h2>
+        <ul>
+          <li class="preview" data-img-src="{{imgSrc}}">Preview</li>
+          <li>|</li>
+          <a href="{{location}}" class="project-url"><li>Explore</li></a>
+        </ul>
         <section class="project-body">{{{projectBody}}}</section>
         <a href="#" class="read-on">Continue Reading</a>
         <a href="#" class="read-less">Less</a>
@@ -28,6 +33,8 @@
 
   </head>
   <body>
+
+    <div class="overlay"><img></div>
 
     <header>
       <h2 class="filter-heading">Filter</h2>

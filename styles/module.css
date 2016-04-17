@@ -10,9 +10,9 @@ header h1 {
 }
 
 header h2 {
-  font-family: 'Unica One';
+  font-weight: lighter;
   text-transform: uppercase;
-  font-size: 4vmin;
+  font-size: 3vmin;
   margin: 2%, 0, 0, 0
 }
 
@@ -23,6 +23,7 @@ section {
 footer {
   text-align: right;
   background-color: #fafafa;
+  font-size: 3vmin;
 }
 
 .project-body p, #about p {
@@ -39,19 +40,20 @@ nav.social li, nav.main-nav li {
 
 nav.social {
   text-align: center;
-  font-size: 5vmin;
+  font-size: 4vmin;
   background-color: #d1d1d1;
 }
 
 nav.main-nav {
-  font-size: 5vmin;
+  font-size: 4vmin;
   background-color: #d1d1d1;
   text-align:center;
   display: table;
 }
 
 .article-box {
-  border: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   background-color: #fafafa;
 }
 
@@ -67,7 +69,7 @@ nav.main-nav {
 
 .article-box h1, #about h1 {
   color: #f1986b;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
 }
 
 .article-box h1 {
@@ -79,6 +81,16 @@ nav.main-nav {
   display: block;
   font-size: 2.815vmin;
   font-style: italic;
+}
+
+.article-box ul {
+  list-style: none;
+  margin: 0;
+}
+
+.article-box li {
+    display: inline-block;
+    font-size: 2.815vmin;
 }
 
 .article-box p, #about p {
@@ -114,11 +126,11 @@ max-width: 50%;
 }
 
 .filters ul {
-  margin-top: 3em;
+  margin-top: 7vmin;
   position: relative;
   display: block;
   list-style: none;
-  font-size: 3vmin;
+  font-size: 2vmin;
 }
 
 .filters a {

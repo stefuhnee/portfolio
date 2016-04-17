@@ -15,14 +15,13 @@ projectView.handleMainNav = function() {
     if ($(this).text() === 'About') {
       $('header h1').hide();
       $('header').height('auto');
-      $('#about').attr('margin-top', '20%');
     } else {
       $('header h1').show();
+      $('header').height('auto');
     }
     var $clickedSection = $(this).attr('data-content');
     $('#' + $clickedSection).fadeIn();
   });
-
   $('.main-nav .tab:first').click();
 };
 
@@ -57,9 +56,24 @@ projectView.handleFilterNav = function() {
   });
 };
 
+projectView.handleOverlay = function() {
+  $('.article-box ul').on('click', '.preview', function(event) {
+    event.preventDefault();
+    $('.overlay').addClass('active-overlay');
+    $('.overlay img').show();
+    var $imgSrc = $(this).data('img-src');
+    $('.overlay img').attr('src', $imgSrc);
+    $('.overlay').on('click', function() {
+      $(this).removeClass('active-overlay');
+      $('.overlay img').hide();
+    });
+  });
+};
+
 $(document).ready(function() {
   projectView.handleCategoryFilter();
   projectView.handleMainNav();
   projectView.setTeasers();
   projectView.handleFilterNav();
+  projectView.handleOverlay();
 });

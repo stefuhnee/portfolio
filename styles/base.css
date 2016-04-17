@@ -1,12 +1,13 @@
 body {
   background-color: #fafcfd;
-  font-family: 'Vollkorn', sans-serif;
-  font-weight: lighter;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
   color: #303030;
 }
 
 h1 {
-  font-family: 'Unica One';
+  font-family: 'Playfair Display';
+  font-weight: lighter;
 }
 
 ul {
@@ -20,7 +21,6 @@ a {
 }
 
 nav {
-  font-family: "Unica One", sans-serif;
-  font-weight: bold;
+  font-family: "Open Sans Condensed", sans-serif;
   text-transform: uppercase;
 }
