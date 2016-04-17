@@ -25,7 +25,7 @@ portfolioProjects.forEach(function(ele) {
 projects.forEach(function(a) {
   $('#projects').append(a.toHTML('#project-template'));
   if (categories.indexOf(a.category)) {
-    $('#category-filter').append(a.toHTML('#category-filter-template'));
+    $('.filters ul').append(a.toHTML('#category-filter-template'));
     categories.push(a.category);
   };
 });

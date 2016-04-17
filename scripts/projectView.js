@@ -1,13 +1,10 @@
 var projectView = {};
 
 projectView.handleCategoryFilter = function() {
-  $('#category-filter').on('change', function(e) {
-    if ($(this).val()) {
-      $('article').hide();
-      $('article[data-category="' + $(this).val() + '"]').show();
-    } else {
-      $('article').show();
-    }
+  $('.filters ul').on('click', 'li', function(e) {
+    e.preventDefault();
+    $('.article-box').hide();
+    $('article[data-category="' + $(this).text() + '"]').show();
   });
 };
 
@@ -38,17 +35,21 @@ projectView.setTeasers = function() {
     $(this).hide();
   });
 };
-//
-// projectView.lightBox = function() {
-//   $('.article-box a').on('click', function(e) {
-//     e.preventDefault();
-//     $('.article-box').fadeTo('1', '0.1');
-//   });
-// };
+
+projectView.handleFilterNav = function() {
+  $('.filters').hide();
+  $('.filter-heading').on('click', function() {
+    $(this).hide();
+    $('.filters').slideToggle();
+    $('.filter-exit').on('click', function() {
+      $('.filters').slideToggle();
+    });
+  });
+};
 
 $(document).ready(function() {
   projectView.handleCategoryFilter();
   projectView.handleMainNav();
   projectView.setTeasers();
-  // projectView.lightBox();
+  projectView.handleFilterNav();
 });

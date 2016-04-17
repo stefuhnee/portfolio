@@ -6,6 +6,13 @@ header h1 {
   font-family: "Herr Von Muellerhoff", sans-serif;
   font-weight: normal;
   font-size: 25vmin;
+  display: inline-block;
+}
+
+header h2 {
+  font-family: 'Unica One';
+  text-transform: uppercase;
+  font-size: 1.2rem;
 }
 
 section {
@@ -62,7 +69,6 @@ nav.main-nav {
 }
 
 .article-box h1, #about h1 {
-  /*font-family: 'Merriweather', sans-serif;*/
   font-size: 6.665vmin;
   color: #f1986b;
   text-transform: uppercase;
@@ -85,7 +91,19 @@ nav.main-nav {
 }
 
 .filters {
+  text-align: right;
+}
+
+.filters ul {
+  margin-top: 3em;
+  position: relative;
+  display: block;
   list-style: none;
+}
+
+.filters a {
+  text-decoration: none;
+  color: #f1986b;
 }
 
 .styled-select select {

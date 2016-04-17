@@ -10,6 +10,15 @@ header {
   margin: 2rem auto 0 auto;
 }
 
+header h1 {
+  margin: 0 auto;
+}
+
+header h2 {
+  position: absolute;
+  right: 0;
+}
+
 h1 {
   padding: 0;
   margin: 0;
@@ -98,4 +107,9 @@ nav.social {
 .article-box, #about {
   width: 96%;
   padding: 2% 2% 0 2%;
+}
+
+.filters {
+  float: right;
+  width: 30%;
 }
