@@ -148,20 +148,21 @@ nav.social li {
 
 .active-overlay {
   left: 5%;
-  top: 0;
-  height: 100%;
+  height: auto;
   width: 90%;
   position: fixed;
   z-index: 10;
   background-color: #303030;
   text-align: center;
   padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .overlay img {
-  margin: 0 auto;
-  max-height: 90%;
+  position: relative;
+  margin: auto;
   max-width: 90%;
+  max-height: 90%;
 }
 
 #about {
