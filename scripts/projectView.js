@@ -11,6 +11,14 @@ projectView.handleCategoryFilter = function() {
 projectView.handleMainNav = function() {
   $('.main-nav').on('click', 'li', function() {
     $('section.tab-content').hide();
+    console.log($(this).text());
+    if ($(this).text() === 'About') {
+      $('header h1').hide();
+      $('header').height('auto');
+      $('#about').attr('margin-top', '20%');
+    } else {
+      $('header h1').show();
+    }
     var $clickedSection = $(this).attr('data-content');
     $('#' + $clickedSection).fadeIn();
   });

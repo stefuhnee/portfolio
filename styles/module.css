@@ -25,17 +25,8 @@ footer {
   background-color: #fafafa;
 }
 
-.project-body, #about {
-  text-align: center;
-}
-
 .project-body p, #about p {
   text-align: left;
-}
-
-.article-box, #about {
-  border: 1px solid black;
-  background-color: #fafafa;
 }
 
 nav.social ul, nav.main-nav ul {
@@ -60,7 +51,12 @@ nav.main-nav {
 }
 
 .article-box {
+  border: 1px solid black;
   background-color: #fafafa;
+}
+
+#about {
+  position: relative;
 }
 
 .article-box .read-on, .article-box .read-less {
@@ -70,9 +66,12 @@ nav.main-nav {
 }
 
 .article-box h1, #about h1 {
-  font-size: 6.665vmin;
   color: #f1986b;
   text-transform: uppercase;
+}
+
+.article-box h1 {
+  font-size: 6.665vmin;
 }
 
 .article-box h2 {
@@ -82,13 +81,32 @@ nav.main-nav {
   font-style: italic;
 }
 
-.article-box p {
-  font-size: 3.75vw;
+.article-box p, #about p {
+  font-size: 3.75vmin;
   position: relative;
 }
 
 .article-box a {
   color: #f1986b;
+}
+
+#about h1 {
+  font-size: 6vmin;
+  float: center;
+  display: inline-block;
+}
+
+#about h2 {
+  font-weight: lighter;
+  display: block;
+  font-size: 3.75vmin;
+}
+
+#about img {
+float: left;
+margin-top: 3vmin;
+border-radius: 25%;
+max-width: 50%;
 }
 
 .filters {
@@ -115,7 +133,7 @@ nav.main-nav {
 @media (min-width: 400px) {
   body {
   }
-  .article-box p {
+  .article-box p, #about h1 {
     font-size: 1.2em;
   }
   .article-box h1 {
@@ -128,12 +146,16 @@ nav.main-nav {
   .article-box h2 {
     font-size: 1em;
   }
+   #about h1 {
+     font-size: 6vmin;
+   }
+   #about h2 {
+     display: inline-block;
+     width: 50%;
+     float: center;
 }
 
 @media (min-width: 768px)  {
-  .article-box .read-on, .article-box .read-less {
-    min-width: 25%;
-  }
   .article-box h2 {
     position: absolute;
     right: 2%;
@@ -146,5 +168,11 @@ nav.main-nav {
 
   .project-body {
     margin-top: 5vmin;
+  }
+  #about {
+    margin-top: 5%;
+  }
+  #about h1 {
+    font-size: 8vmin;
   }
 }

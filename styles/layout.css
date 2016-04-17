@@ -38,6 +38,10 @@ nav {
   width: 100%;
 }
 
+.projects {
+  margin-top: 2%;
+}
+
 .project-body section {
   max-width: 100%;
 }
@@ -52,7 +56,7 @@ nav {
   position: relative;
 }
 
-.article-box h1 {
+.article-box h1, #about h1 {
   margin-top: 0.5rem;
   margin-bottom: 0;
 }
@@ -61,7 +65,7 @@ nav {
   margin-top: 0.25rem;
 }
 
-.article-box {
+.article-box, #about {
   width: 96%;
   margin-top: 1em;
   padding: 0 2% 0 2%;
@@ -113,11 +117,6 @@ nav.social li {
   min-width: 30%;
 }
 
-.article-box, #about {
-  width: 96%;
-  padding: 2% 2% 0 2%;
-}
-
 .filters {
   width: auto;
   top: 0;
@@ -126,4 +125,19 @@ nav.social li {
 }
 .filter-exit {
   margin-top: 1rem;
+}
+
+.clearfix {
+  clear: both;
+}
+
+#about {
+  height: auto;
+  margin-top: 10%;
+}
+
+#about h1 {
+  position: relative;
+  margin-top: 20%;
+  max-width: 50%;
 }
