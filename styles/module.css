@@ -64,7 +64,7 @@ nav.main-nav {
 }
 
 .article-box h1, #about h1 {
-  color: #f1986b;
+  color: #4142A4;
 }
 
 .article-box h1 {
@@ -169,9 +169,10 @@ max-width:100%
     font-size: 1.1em;
     min-width: 39%;
   }
-
   .article-box h2 {
     font-size: 1em;
+    margin-top: 1vmin;
+    margin-bottom: 1vmin;
   }
 
    #about h1 {

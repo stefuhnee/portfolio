@@ -70,11 +70,11 @@ nav {
 }
 
 .article-box h2 {
-  margin-top: 0.25rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .article-box ul {
-  margin-top: 2vmin;
   margin-bottom: 0;
   height: auto;
   display: inline-block;
@@ -90,7 +90,7 @@ nav {
 
 .article-box, #about {
   width: 96%;
-  margin-bottom: 1vmin;
+  margin-bottom: 2vmin;
   padding: 0 2% 0 2%;
 }
 
