@@ -5,7 +5,7 @@ a:hover {}
 }
 
 .article-box .read-on:hover, .article-box .read-less:hover {
-  color: #000;
+  color: #303030;
 }
 
 .template {
@@ -18,4 +18,12 @@ a:hover {}
 
 .social li:hover {
   background-color: #f1986b;
+}
+
+.project-url li:hover {
+  color: #303030;
+}
+
+.preview:hover {
+  color: #303030;
 }

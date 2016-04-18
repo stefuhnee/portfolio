@@ -36,9 +36,10 @@ main {
 }
 
 footer {
-  margin: 2% auto 10% auto;
+  margin: 5vmin auto 5vmin auto;
   width: 100%;
   padding: 0;
+  padding-right: 5%;
 }
 
 nav {
@@ -147,6 +148,7 @@ nav.social li {
   position: absolute;
   z-index: 10;
 }
+
 .filter-exit {
   margin-top: 1rem;
 }
@@ -179,6 +181,7 @@ nav.social li {
   height: 50vmin;
   margin: 0 auto;
   text-align: center;
+  z-index: 0;
 }
 
 #about-heading-group {

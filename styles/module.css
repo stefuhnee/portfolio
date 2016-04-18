@@ -126,6 +126,8 @@ nav.main-nav {
   display: table;
   height: 100%;
   font-family: 'Open Sans Condensed', sans-serif;
+  position: relative;
+  bottom: 2vmin
 }
 
 #about-img-container {
@@ -133,7 +135,7 @@ nav.main-nav {
 }
 
 #about h1 {
-  font-size: 5vmin;
+  font-size: 6vmin;
   margin: 0 auto;
   width: 100%;
   display: table-cell;
@@ -144,7 +146,7 @@ nav.main-nav {
 #about span {
   display: block;
   font-weight: lighter;
-  font-size: 3.75vmin;
+  font-size: 2.75vmin;
   position: absolute;
   color: #303030;
 }
@@ -155,23 +157,29 @@ max-width:100%
 }
 
 @media (min-width: 400px) {
-  body {
-  }
   .article-box p {
     font-size: 1.2em;
   }
+
   .article-box h1 {
     font-size: 2em;
   }
+
   .article-box .read-on, .article-box .read-less {
     font-size: 1.1em;
     min-width: 39%;
   }
+
   .article-box h2 {
     font-size: 1em;
   }
+
    #about h1 {
      font-size: 6vmin;
+   }
+
+   #about-heading-group {
+     float: right;
    }
 
 @media (min-width: 768px)  {
@@ -188,12 +196,24 @@ max-width:100%
   .project-body {
     margin-top: 5vmin;
   }
-  #about {
-    margin-top: 2%;
+
+  #about header {
+    width: 70%;
   }
+
+  #about-heading-group {
+    width: 45%;
+    float: left;
+    margin-left: 3vmin;
+  }
+
+  #about-img-container {
+    width: 50%;
+    float: left;
+  }
+
   #about h1 {
-    font-size: 8vmin;
+    font-size: 7vmin;
     position: relative;
-    /*bottom: 10vmin;*/
   }
 }
