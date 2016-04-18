@@ -70,10 +70,23 @@ projectView.handleOverlay = function() {
   });
 };
 
+projectView.imageHover = function() {
+  $('#about-img-container img').on('mouseover', function() {
+    console.log('hover');
+    $(this).attr('src', 'img/profile-color.png');
+  });
+  $('#about-img-container img').on('mouseout', function() {
+    console.log('hover');
+    $(this).attr('src', 'img/profile.png');
+  });
+};
+
+
 $(document).ready(function() {
   projectView.handleCategoryFilter();
   projectView.handleMainNav();
   projectView.setTeasers();
   projectView.handleFilterNav();
   projectView.handleOverlay();
+  projectView.imageHover();
 });

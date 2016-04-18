@@ -175,12 +175,20 @@ max-width:100%
     margin-bottom: 1vmin;
   }
 
+  #about {
+    margin-top: 4vmin;
+  }
+
    #about h1 {
      font-size: 6vmin;
    }
 
    #about-heading-group {
      float: right;
+   }
+
+   #about p {
+     font-size: 3vmin;
    }
 
 @media (min-width: 768px)  {
