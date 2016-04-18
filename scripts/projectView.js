@@ -82,6 +82,16 @@ projectView.imageHover = function() {
 };
 
 
+ProjectView.initIndexPage = function() {
+  Project.all.forEach(function(a){
+    $('#projects').append(a.toHTML('#project-template'));
+    if (categories.indexOf(a.category)) {
+      $('.filters ul').append(a.toHTML('#category-filter-template'));
+      categories.push(a.category);
+    };
+  });
+
+
 $(document).ready(function() {
   projectView.handleCategoryFilter();
   projectView.handleMainNav();
