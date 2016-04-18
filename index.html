@@ -36,7 +36,7 @@
 
     <div class="overlay"><img></div>
 
-    <header>
+    <header id="main-header">
       <h2 class="filter-heading">Filter</h2>
       <h1>S.</h1>
 
@@ -56,27 +56,37 @@
         <li><a href="https://www.facebook.com/stefuhn33" target="_blank" class="icon-facebook"></a></li>
       </ul>
     </nav>
+
     <nav class="main-nav">
       <ul>
         <li class="tab" data-content="projects"><a href="#">Home</a></li>
         <li class="tab" data-content="about"><a href="#">About</a></li>
       </ul>
     </nav>
+
     <main>
       <section id="projects" class="tab-content">
-
       </section>
+
       <section id="about" class="tab-content">
-        <img src="img/profile.png">
-        <h1>Stefanie Hansen</h1>
-        <h2>is a developer seeking to create a beautiful and functional user experience.</h2>
+        <header id="about-header">
+          <div id="about-img-container">
+            <img src="img/profile.png">
+          </div>
+          <div id="about-heading-group">
+            <h1>Stefanie Hansen
+            <span>is a developer seeking to create a beautiful and functional user experience.</span></h1>
+          </div>
+        </header>
         <div class="clearfix"></div>
         <p>Some super cool things about me</p>
       </section>
-      <footer>
-        <span>&copy; 2016 Stefanie Hansen</span>
-      </footer>
     </main>
+
+    <footer>
+      <span>&copy; 2016 Stefanie Hansen</span>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="scripts/projects.js"></script>

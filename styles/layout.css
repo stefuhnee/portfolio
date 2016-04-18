@@ -2,7 +2,7 @@ body {
   width:  100%;
 }
 
-header {
+header#main-header {
   margin:  0 auto;
   position: relative;
   height: 32vmin;
@@ -11,12 +11,20 @@ header {
   margin: 6vmin auto 0 auto;
 }
 
-header h1 {
+header#about-header {
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  margin: 6vmin auto 0 auto;
+}
+
+header#main-header h1 {
   margin: 0 auto;
   padding: 0;
 }
 
-header h2 {
+header#main-header h2 {
   position: absolute;
   right: 0;
 }
@@ -137,6 +145,7 @@ nav.social li {
   top: 0;
   right: 0;
   position: absolute;
+  z-index: 10;
 }
 .filter-exit {
   margin-top: 1rem;
@@ -165,13 +174,26 @@ nav.social li {
   max-height: 90%;
 }
 
+#about header {
+  position: relative;
+  height: 50vmin;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#about-heading-group {
+  width: 50%;
+  float: right;
+}
+
+#about-img-container {
+  margin-top: 3vmin;
+  display: inline-block;
+  width: 45%;
+  float: left;
+}
+
 #about {
   height: auto;
   margin-top: 10%;
-}
-
-#about h1 {
-  position: relative;
-  margin-top: 20%;
-  max-width: 50%;
 }

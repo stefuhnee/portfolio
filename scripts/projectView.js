@@ -13,11 +13,11 @@ projectView.handleMainNav = function() {
     $('section.tab-content').hide();
     console.log($(this).text());
     if ($(this).text() === 'About') {
-      $('header h1').hide();
-      $('header').height('auto');
+      $('#main-header h1').hide();
+      $('#main-header').height('auto');
     } else {
-      $('header h1').show();
-      $('header').height('auto');
+      $('#main-header h1').show();
+      $('#main-header').height('auto');
     }
     var $clickedSection = $(this).attr('data-content');
     $('#' + $clickedSection).fadeIn();

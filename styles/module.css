@@ -2,7 +2,7 @@ header {
   text-align: center;
 }
 
-header h1 {
+header#main-header h1 {
   font-family: "Herr Von Muellerhoff", sans-serif;
   font-weight: normal;
   font-size: 28vmin;
@@ -57,10 +57,6 @@ nav.main-nav {
   background-color: #fafafa;
 }
 
-#about {
-  position: relative;
-}
-
 .article-box .read-on, .article-box .read-less {
   color: #f1986b;
   display: block;
@@ -69,7 +65,6 @@ nav.main-nav {
 
 .article-box h1, #about h1 {
   color: #f1986b;
-  /*text-transform: uppercase;*/
 }
 
 .article-box h1 {
@@ -93,6 +88,10 @@ nav.main-nav {
     font-size: 2.815vmin;
 }
 
+.preview {
+  color: #f1986b;
+}
+
 .article-box p, #about p {
   font-size: 3.75vmin;
   position: relative;
@@ -100,25 +99,6 @@ nav.main-nav {
 
 .article-box a {
   color: #f1986b;
-}
-
-#about h1 {
-  font-size: 6vmin;
-  float: center;
-  display: inline-block;
-}
-
-#about h2 {
-  font-weight: lighter;
-  display: block;
-  font-size: 3.75vmin;
-}
-
-#about img {
-float: left;
-margin-top: 3vmin;
-border-radius: 25%;
-max-width: 50%;
 }
 
 .filters {
@@ -142,10 +122,42 @@ max-width: 50%;
   font-size: 1rem;
 }
 
+#about-heading-group {
+  display: table;
+  height: 100%;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#about-img-container {
+  display: inline-block;
+}
+
+#about h1 {
+  font-size: 5vmin;
+  margin: 0 auto;
+  width: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+
+#about span {
+  display: block;
+  font-weight: lighter;
+  font-size: 3.75vmin;
+  position: absolute;
+  color: #303030;
+}
+
+#about img {
+border-radius: 25%;
+max-width:100%
+}
+
 @media (min-width: 400px) {
   body {
   }
-  .article-box p, #about h1 {
+  .article-box p {
     font-size: 1.2em;
   }
   .article-box h1 {
@@ -161,11 +173,6 @@ max-width: 50%;
    #about h1 {
      font-size: 6vmin;
    }
-   #about h2 {
-     display: inline-block;
-     width: 50%;
-     float: center;
-}
 
 @media (min-width: 768px)  {
   .article-box h2 {
@@ -182,9 +189,11 @@ max-width: 50%;
     margin-top: 5vmin;
   }
   #about {
-    margin-top: 5%;
+    margin-top: 2%;
   }
   #about h1 {
     font-size: 8vmin;
+    position: relative;
+    /*bottom: 10vmin;*/
   }
 }
