@@ -226,3 +226,9 @@ max-width:100%
     position: relative;
   }
 }
+
+@media (min-width: 900px)  {
+  #about-heading-group {
+    margin-top: 8vmin;
+  }
+}

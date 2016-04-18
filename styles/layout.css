@@ -184,6 +184,10 @@ nav.social li {
   z-index: 0;
 }
 
+#about-img-container img {
+  max-width: 80%;
+}
+
 #about-heading-group {
   width: 50%;
   float: right;
