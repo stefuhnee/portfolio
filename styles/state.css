@@ -1,15 +1,29 @@
-a:hover {
-  color: #000;
-}
+a:hover {}
 
-.article-box h1:hover {
+.article-box h1:hover, .article-box a:hover {
   color: #000;
 }
 
 .article-box .read-on:hover, .article-box .read-less:hover {
-  color: #000;
+  color: #303030;
 }
 
 .template {
   display: none;
+}
+
+.main-nav li:hover {
+  background-color: #f1986b;
+}
+
+.social li:hover {
+  background-color: #f1986b;
+}
+
+.project-url li:hover {
+  color: #303030;
+}
+
+.preview:hover {
+  color: #303030;
 }

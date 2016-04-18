@@ -1,27 +1,206 @@
-header {
-  height: auto;
+body {
+  width:  100%;
+}
+
+header#main-header {
+  margin:  0 auto;
+  position: relative;
+  height: 32vmin;
+  z-index:  3;
+  width:  96%;
+  margin: 6vmin auto 0 auto;
+}
+
+header#about-header {
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
   width: 100%;
+  margin: 6vmin auto 0 auto;
+}
+
+header#main-header h1 {
+  margin: 0 auto;
+  padding: 0;
+}
+
+header#main-header h2 {
+  position: absolute;
+  right: 0;
 }
 
 main {
-  width: 100%;
-  margin: 0 auto;
+  width: 96%;
+  margin: 0 auto 5% auto;
+  position:  relative;
 }
 
 footer {
-  height: 5%;
+  margin: 5vmin auto 5vmin auto;
   width: 100%;
-  margin-top: 1em;
-  bottom: 0;
-  position: relative;
+  padding: 0;
+  padding-right: 5%;
 }
 
 nav {
   width: 100%;
-  text-align: center;
+}
+
+.projects {
+  position: absolute;
+  bottom: 8vmin;
+}
+
+.project-body section {
+  max-width: 100%;
+}
+
+.project-body img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.project-body {
+  margin-top: 1rem;
+  position: relative;
+}
+
+.article-box h1, #about h1 {
+  margin-bottom: 0.5vmin;
+}
+
+.article-box h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.article-box ul {
+  margin-bottom: 0;
+  height: auto;
+  display: inline-block;
+}
+
+.article-box li {
+  padding: 0 1vmin 0 1vmin;
+}
+
+.article-box: p {
+  margin: 0;
+}
+
+.article-box, #about {
+  width: 96%;
+  margin-bottom: 2vmin;
+  padding: 0 2% 0 2%;
 }
 
 nav.main-nav {
+  position:  fixed;
+  z-index: 5;
+  height: 8vmin;
+  top:  0;
+}
+
+nav.main-nav ul {
+  display: table-cell;
+  vertical-align: middle;
+  padding:  0;
+  margin:  0;
+}
+
+nav.main-nav li {
+  padding: 0 .5rem;
+  height:  100%;
+}
+
+nav.social {
+  position: fixed;
+  bottom:  0;
+  z-index:  1;
+  height: 5vmin;
+  text-align: center;
+  display: table;
+}
+
+nav.social ul {
+height: 100%;
+display: table-cell;
+vertical-align: middle;
+padding: 0;
+}
+
+nav.social li {
+  height: 100%;
+  padding: 0 .4rem;
+  display: inline-block;
+}
+
+.article-box .read-on, .article-box .read-less {
+  padding-bottom: 2px;
   margin: 0 auto;
-  display: block;
+  min-width: 30%;
+}
+
+.filters {
+  width: auto;
+  top: 0;
+  right: 0;
+  position: absolute;
+  z-index: 10;
+}
+
+.filter-exit {
+  margin-top: 1rem;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.active-overlay {
+  left: 5%;
+  height: auto;
+  width: 90%;
+  position: fixed;
+  z-index: 10;
+  background-color: #303030;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.overlay img {
+  position: relative;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+#about header {
+  position: relative;
+  height: 50vmin;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 0;
+}
+
+#about-img-container img {
+  max-width: 80%;
+}
+
+#about-heading-group {
+  width: 50%;
+  float: right;
+}
+
+#about-img-container {
+  margin-top: 3vmin;
+  display: inline-block;
+  width: 45%;
+  float: left;
+}
+
+#about {
+  height: auto;
+  margin-top: 3vmin;
 }

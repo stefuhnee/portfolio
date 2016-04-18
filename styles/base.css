@@ -1,20 +1,13 @@
 body {
-  background-color: #d1d7bb;
-  font-family: 'Lato', sans-serif;
+  background-color: #fafcfd;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  color: #303030;
+}
+
+h1 {
+  font-family: 'Playfair Display';
   font-weight: lighter;
-  margin: 0 2%;
-}
-
-header {
-  font-family: "Lobster Two", sans-serif;
-  float: left;
-  position: relative;
-}
-
-footer {
-  background-color: #a6a376;
-  width: 100%;
-  text-align: right;
 }
 
 ul {
@@ -28,8 +21,6 @@ a {
 }
 
 nav {
-  font-family: "Merriweather", sans-serif;
-  font-weight: bold;
-  width: 100%;
-  clear: both;
+  font-family: "Open Sans Condensed", sans-serif;
+  text-transform: uppercase;
 }

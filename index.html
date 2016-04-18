@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="vendor/styles/normalize.css">
     <link rel="stylesheet" type="text/css" href="styles/fonts.css">
-    <link href="http://fonts.googleapis.com/css?family=Cardo|Montserrat|Lobster+Two|Pontano+Sans|Oswald+Light|Merriweather|Lato" rel="stylesheet" type="text/css" />
+    <link href='https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Open+Sans+Condensed|Playfair+Display' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" type="text/css" href="styles/layout.css">
     <link rel="stylesheet" type="text/css" href="styles/module.css">
@@ -14,8 +14,13 @@
 
     <script id="project-template" type="text/x-handlebars-template">
       <article class="article-box" data-category="{{category}}">
-        <a href="{{location}}" class="{project-url}"><h1>{{title}}</h1></a>
+        <a href="{{location}}" class="project-url"><h1>{{title}}</h1></a>
         <h2>{{publishStatus}}</h2>
+        <ul>
+          <li class="preview" data-img-src="{{imgSrc}}">Preview</li>
+          <li>|</li>
+          <a href="{{location}}" class="project-url"><li>Explore</li></a>
+        </ul>
         <section class="project-body">{{{projectBody}}}</section>
         <a href="#" class="read-on">Continue Reading</a>
         <a href="#" class="read-less">Less</a>
@@ -23,14 +28,26 @@
     </script>
 
     <script id="category-filter-template" type="text/x-handlebars-template">
-      <option value="{{category}}">{{category}}</option>
+      <a href="#"><li>{{category}}</li></a>
     </script>
 
   </head>
   <body>
-    <header>
-      <h1>Stefanie</h1>
+
+    <div class="overlay"><img></div>
+
+    <header id="main-header">
+      <h2 class="filter-heading">Filter</h2>
+      <h1>S.</h1>
+
+      <nav class="filters">
+        <h2>Category</h2>
+        <ul>
+        </ul>
+        <div class="filter-exit icon-arrow-right2"></div>
+      </nav>
     </header>
+
     <nav class="social">
       <ul>
         <li><a href="https://github.com/stefuhnee" target="_blank" class="icon-github"></a></li>
@@ -39,28 +56,39 @@
         <li><a href="https://www.facebook.com/stefuhn33" target="_blank" class="icon-facebook"></a></li>
       </ul>
     </nav>
+
     <nav class="main-nav">
       <ul>
         <li class="tab" data-content="projects"><a href="#">Home</a></li>
         <li class="tab" data-content="about"><a href="#">About</a></li>
       </ul>
     </nav>
+
     <main>
       <section id="projects" class="tab-content">
-        <div class="styled-select filters">
-          <select id="category-filter">
-            <option value="">Filter by Category </option>
-          </select>
-        </div>
       </section>
+
       <section id="about" class="tab-content">
-        <h1>About Stefanie</h1>
-        <p>Some super cool things about me</p>
+        <header id="about-header">
+          <div id="about-img-container">
+            <img src="img/profile.png">
+          </div>
+          <div id="about-heading-group">
+            <h1>Stefanie Hansen
+            <span>is a developer seeking to create a beautiful and functional user experience.</span></h1>
+          </div>
+        </header>
+        <div class="clearfix"></div>
+        <p>
+          I am a unicorn. 
+        </p>
       </section>
-      <footer>
-        <span>&copy; 2016 Stefanie Hansen</span>
-      </footer>
     </main>
+
+    <footer>
+      <span>&copy; 2016 Stefanie Hansen</span>
+    </footer>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="scripts/projects.js"></script>

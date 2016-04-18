@@ -6,12 +6,6 @@ function Project (projects) {
   };
 };
 
-// Project.prototype.lightBox = function() {
-//   $('.article-box a').on('click', function() {
-//     $('.article-box').hide();
-//   });
-// };
-
 Project.prototype.toHTML = function(template) {
   var template = Handlebars.compile($(template).html());
 
@@ -31,7 +25,7 @@ portfolioProjects.forEach(function(ele) {
 projects.forEach(function(a) {
   $('#projects').append(a.toHTML('#project-template'));
   if (categories.indexOf(a.category)) {
-    $('#category-filter').append(a.toHTML('#category-filter-template'));
+    $('.filters ul').append(a.toHTML('#category-filter-template'));
     categories.push(a.category);
   };
 });
