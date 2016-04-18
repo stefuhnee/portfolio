@@ -4,8 +4,9 @@ function Project (projects) {
   for (key in projects) {
     this[key] = projects[key];
   };
-  Project.all = [];
 };
+
+Project.all = [];
 
 Project.prototype.toHTML = function(template) {
   var template = Handlebars.compile($(template).html());
@@ -20,7 +21,7 @@ Project.loadAll = function(data) {
     return (new Date(b.postDate)) - (new Date(a.postDate));
   });
   data.forEach(function(ele) {
-    Article.all.push(new Project(ele));
+    Project.all.push(new Project(ele));
   });
 };
 
@@ -34,13 +35,13 @@ Project.fetchAll = function() {
         var eTag = xhr.getResponseHeader('eTag');
         if (eTag !== localStorage.eTag) {
           $.getJSON('data/projects.json', function(data) {
-            Article.loadAll(data);
+            Project.loadAll(data);
             localStorage.projects = JSON.stringify(Project.all);
             localStorage.eTag = JSON.stringify(eTag);
             projectView.initIndexPage();
           });
         } else {
-          Article.loadAll(JSON.parse(localStorage.projects));
+          Project.loadAll(JSON.parse(localStorage.projects));
           projectView.initIndexPage();
         }
       }
@@ -55,7 +56,7 @@ Project.fetchAll = function() {
       }
     });
     $.getJSON('data/projects.json', function(data){
-      Article.loadAll(data);
+      Project.loadAll(data);
       localStorage.projects = JSON.stringify(Project.all);
       projectView.initIndexPage();
     });

@@ -82,7 +82,7 @@ projectView.imageHover = function() {
 };
 
 
-ProjectView.initIndexPage = function() {
+projectView.initIndexPage = function() {
   Project.all.forEach(function(a){
     $('#projects').append(a.toHTML('#project-template'));
     if (categories.indexOf(a.category)) {
@@ -90,6 +90,7 @@ ProjectView.initIndexPage = function() {
       categories.push(a.category);
     };
   });
+};
 
 
 $(document).ready(function() {
