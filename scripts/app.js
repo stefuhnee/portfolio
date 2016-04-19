@@ -37,7 +37,7 @@ Project.fetchAll = function() {
           $.getJSON('data/projects.json', function(data) {
             Project.loadAll(data);
             localStorage.projects = JSON.stringify(Project.all);
-            localStorage.eTag = JSON.stringify(eTag);
+            localStorage.eTag = eTag;
             projectView.initIndexPage();
           });
         } else {
@@ -52,7 +52,7 @@ Project.fetchAll = function() {
       url: 'data/projects.json',
       success: function(data, message, xhr) {
         var eTag = xhr.getResponseHeader('eTag');
-        localStorage.eTag = JSON.stringify(eTag);
+        localStorage.eTag = eTag;
       }
     });
     $.getJSON('data/projects.json', function(data){
