@@ -1,10 +1,12 @@
-var projects = [], categories = [];
+var categories = [];
 
 function Project (projects) {
   for (key in projects) {
     this[key] = projects[key];
   };
 };
+
+Project.all = [];
 
 Project.prototype.toHTML = function(template) {
   var template = Handlebars.compile($(template).html());
@@ -14,18 +16,49 @@ Project.prototype.toHTML = function(template) {
   return template(this);
 };
 
-portfolioProjects.sort(function(a,b) {
-  return (new Date(b.postDate)) - (new Date(a.postDate));
-});
+Project.loadAll = function(data) {
+  data.sort(function(a,b) {
+    return (new Date(b.postDate)) - (new Date(a.postDate));
+  });
+  data.forEach(function(ele) {
+    Project.all.push(new Project(ele));
+  });
+};
 
-portfolioProjects.forEach(function(ele) {
-  projects.push(new Project(ele));
-});
-
-projects.forEach(function(a) {
-  $('#projects').append(a.toHTML('#project-template'));
-  if (categories.indexOf(a.category)) {
-    $('.filters ul').append(a.toHTML('#category-filter-template'));
-    categories.push(a.category);
-  };
-});
+Project.fetchAll = function() {
+  localStorage.eTag = JSON.stringify(0);
+  if (localStorage.projects) {
+    $.ajax( {
+      type: 'HEAD',
+      url: 'data/projects.json',
+      success: function(data, message, xhr) {
+        var eTag = xhr.getResponseHeader('eTag');
+        if (eTag !== localStorage.eTag) {
+          $.getJSON('data/projects.json', function(data) {
+            Project.loadAll(data);
+            localStorage.projects = JSON.stringify(Project.all);
+            localStorage.eTag = JSON.stringify(eTag);
+            projectView.initIndexPage();
+          });
+        } else {
+          Project.loadAll(JSON.parse(localStorage.projects));
+          projectView.initIndexPage();
+        }
+      }
+    });
+  } else {
+    $.ajax( {
+      type: 'HEAD',
+      url: 'data/projects.json',
+      success: function(data, message, xhr) {
+        var eTag = xhr.getResponseHeader('eTag');
+        localStorage.eTag = JSON.stringify(eTag);
+      }
+    });
+    $.getJSON('data/projects.json', function(data){
+      Project.loadAll(data);
+      localStorage.projects = JSON.stringify(Project.all);
+      projectView.initIndexPage();
+    });
+  }
+};
