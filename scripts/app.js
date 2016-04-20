@@ -1,7 +1,5 @@
 (function(module){
 
-  var categories = [];
-
   function Project (projects) {
     for (key in projects) {
       this[key] = projects[key];
@@ -51,6 +49,15 @@
       Project.loadAll(data);
       localStorage.projects = JSON.stringify(Project.all);
       projectView.initIndexPage();
+    });
+  };
+
+  Project.findBodyLength = function() {
+    return Project.all.map(function(project) {
+      return project.projectBody.match(/\b\w+/g).length;
+    })
+    .reduce(function (a, b) {
+      return a + b;
     });
   };
 

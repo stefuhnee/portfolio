@@ -73,11 +73,9 @@
 
   projectView.imageHover = function() {
     $('#about-img-container img').on('mouseover', function() {
-      console.log('hover');
       $(this).attr('src', 'img/profile-color.png');
     });
     $('#about-img-container img').on('mouseout', function() {
-      console.log('hover');
       $(this).attr('src', 'img/profile.png');
     });
   };
@@ -91,6 +89,7 @@
         $('.filters ul').append(a.toHTML('#category-filter-template'));
         categories.push(a.category);
       };
+      $('.body-info').text(Project.findBodyLength() + ' words within the content on this page :)');
     });
     projectView.handleCategoryFilter();
     projectView.handleMainNav();
