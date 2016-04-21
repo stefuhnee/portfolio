@@ -32,7 +32,7 @@
           var eTag = xhr.getResponseHeader('eTag');
           if (!localStorage.eTag || eTag !== localStorage.eTag) {
             localStorage.eTag = eTag;
-            Project.getAll();
+            Project.getAll(page);
           } else {
             Project.loadAll(JSON.parse(localStorage.projects));
             page();
