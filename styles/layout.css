@@ -39,11 +39,14 @@ footer {
   margin: 5vmin auto 5vmin auto;
   width: 100%;
   padding: 0;
-  padding-right: 5%;
 }
 
 nav {
   width: 100%;
+}
+
+footer span, footer p {
+  margin-right: 2%;
 }
 
 .projects {
