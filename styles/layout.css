@@ -98,7 +98,7 @@ footer span, footer p {
 }
 
 nav.main-nav {
-  position:  fixed;
+  position: absolute;
   z-index: 5;
   height: 8vmin;
   top:  0;
@@ -114,6 +114,10 @@ nav.main-nav ul {
 nav.main-nav li {
   padding: 0 .5rem;
   height:  100%;
+}
+
+nav.main-nav a {
+  color: #4142A4;
 }
 
 nav.social {

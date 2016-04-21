@@ -38,6 +38,10 @@ nav.social li, nav.main-nav li {
   display: inline;
 }
 
+nav.main-nav li {
+
+}
+
 nav.social {
   text-align: center;
   font-size: 4vmin;
@@ -46,8 +50,8 @@ nav.social {
 
 nav.main-nav {
   font-size: 4vmin;
-  background-color: #d1d1d1;
-  text-align:center;
+  background-color: #fafcfd;
+  text-align:left;
   display: table;
 }
 

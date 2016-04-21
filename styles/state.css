@@ -12,7 +12,7 @@ a:hover {}
   display: none;
 }
 
-.main-nav li:hover {
+.main-nav a:hover {
   background-color: #f1986b;
 }
 
