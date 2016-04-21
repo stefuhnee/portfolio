@@ -47,7 +47,7 @@
   projectView.handleFilterNav = function() {
     $('.filters').hide();
     $('.filter-heading').on('click', function() {
-      $(this).hide();
+      $(this).fadeOut('fast');
       $('.filters').slideToggle('slow');
     });
     $('.filter-exit').on('click', function() {
