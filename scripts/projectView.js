@@ -45,7 +45,8 @@
   };
 
   projectView.handleFilterNav = function() {
-    $('.filters').hide();
+    $('.filters-category-heading').hide();
+    $('.filters-category heading ul').hide();
     $('.filter-heading').on('click', function() {
       $(this).fadeOut('fast');
       $('.filters').slideToggle('slow');

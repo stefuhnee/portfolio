@@ -25,8 +25,10 @@ header#main-header h1 {
 }
 
 header#main-header h2 {
-  position: absolute;
+  position: relative;
   right: 0;
+  margin: 0;
+  margin-bottom: 1vmin;
 }
 
 main {
@@ -63,32 +65,34 @@ footer span, footer p {
   margin: 0 auto;
 }
 
-.project-body {
+/*.project-body {
   margin-top: 1rem;
   position: relative;
-}
+}*/
 
 .article-box h1, #about h1 {
-  margin-bottom: 0.5vmin;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
 }
 
 .article-box h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 2vmin;
 }
 
 .article-box ul {
   margin-bottom: 0;
   height: auto;
-  display: inline-block;
 }
 
 .article-box li {
   padding: 0 1vmin 0 1vmin;
 }
 
-.article-box: p {
-  margin: 0;
+.article-box p {
+  line-height: 4vmin;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
 }
 
 .article-box, #about {
@@ -98,10 +102,9 @@ footer span, footer p {
 }
 
 nav.main-nav {
-  position: absolute;
+  position: fixed;
   z-index: 5;
-  height: 8vmin;
-  top:  0;
+  top: 0;
 }
 
 nav.main-nav ul {
@@ -112,12 +115,8 @@ nav.main-nav ul {
 }
 
 nav.main-nav li {
-  padding: 0 .5rem;
-  height:  100%;
-}
-
-nav.main-nav a {
-  color: #4142A4;
+  padding: 1vmin;
+  display: inline-block;
 }
 
 nav.social {
@@ -143,25 +142,35 @@ nav.social li {
 }
 
 .article-box .read-on, .article-box .read-less {
-  padding-bottom: 2px;
+  padding-bottom: 2vmin;
   margin: 0 auto;
   min-width: 30%;
 }
 
+
 .filters {
   width: auto;
-  top: 0;
+  top: 2vmin;
   right: 0;
   position: absolute;
+  right: 0;
   z-index: 10;
 }
 
+.filters ul {
+  position: relative;
+}
+
 .filter-exit {
-  margin-top: 1rem;
+  margin-top: 1vmin;
 }
 
 .clearfix {
   clear: both;
+}
+
+.overlay {
+  display: none;
 }
 
 .active-overlay {
@@ -170,7 +179,6 @@ nav.social li {
   width: 90%;
   position: fixed;
   z-index: 10;
-  background-color: #303030;
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;

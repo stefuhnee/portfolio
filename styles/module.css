@@ -35,11 +35,7 @@ nav.social ul, nav.main-nav ul {
 }
 
 nav.social li, nav.main-nav li {
-  display: inline;
-}
-
-nav.main-nav li {
-
+  display: inline-block;
 }
 
 nav.social {
@@ -50,8 +46,8 @@ nav.social {
 
 nav.main-nav {
   font-size: 4vmin;
-  background-color: #fafcfd;
-  text-align:left;
+  background-color: #d1d1d1;
+  text-align: center;
   display: table;
 }
 
@@ -90,6 +86,7 @@ nav.main-nav {
 .article-box li {
     display: inline-block;
     font-size: 2.815vmin;
+    cursor: pointer;
 }
 
 .preview {
@@ -105,14 +102,15 @@ nav.main-nav {
   color: #f1986b;
 }
 
+.filter-heading {
+  text-align: right;
+}
+
 .filters {
   text-align: right;
 }
 
 .filters ul {
-  margin-top: 7vmin;
-  position: relative;
-  display: block;
   list-style: none;
   font-size: 2vmin;
 }
@@ -124,6 +122,10 @@ nav.main-nav {
 
 .filter-exit {
   font-size: 1rem;
+}
+
+.active-overlay {
+  background-color: #303030;
 }
 
 #about-heading-group {
@@ -162,7 +164,7 @@ max-width:100%
 
 @media (min-width: 400px) {
   .article-box p {
-    font-size: 1.2em;
+    font-size: 3vmin;
   }
 
   .article-box h1 {
@@ -175,8 +177,8 @@ max-width:100%
   }
   .article-box h2 {
     font-size: 1em;
-    margin-top: 1vmin;
-    margin-bottom: 1vmin;
+    /*margin-top: 1vmin;
+    margin-bottom: 1vmin;*/
   }
 
   #about {
@@ -207,7 +209,7 @@ max-width:100%
   }
 
   .project-body {
-    margin-top: 5vmin;
+    /*margin-top: 5vmin;*/
   }
 
   #about header {
