@@ -142,11 +142,6 @@ nav.main-nav {
 
 #about h1 {
   font-size: 6vmin;
-  margin: 0 auto;
-  width: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  position: relative;
 }
 
 #about span {
@@ -159,7 +154,7 @@ nav.main-nav {
 
 #about img {
 border-radius: 25%;
-max-width:100%
+max-width:90%;
 }
 
 @media (min-width: 400px) {
@@ -192,7 +187,11 @@ max-width:100%
    }
 
    #about-heading-group {
-     float: right;
+     width: 35vmin;
+   }
+
+   #about-img-container {
+     width: 35vmin;
    }
 
    #about p {
@@ -200,6 +199,10 @@ max-width:100%
    }
 
 @media (min-width: 768px)  {
+  main {
+    width: 80%;
+  }
+
   .article-box h2 {
     position: absolute;
     right: 2%;
@@ -208,26 +211,30 @@ max-width:100%
 
   .article-box {
     position: relative;
+    border: 1px solid black;
   }
 
   #about header {
-    width: 70%;
+    width: 80%;
   }
 
   #about-heading-group {
-    width: 45%;
-    float: left;
+    width: 30vmin;
     margin-left: 3vmin;
+    margin-top: 4vmin;
   }
 
   #about-img-container {
-    width: 50%;
-    float: left;
+    width: 50vmin;
   }
 
   #about h1 {
-    font-size: 7vmin;
+    font-size: 6vmin;
     position: relative;
+  }
+
+  #about h2 {
+    font-size: 5vmin;
   }
 }
 
