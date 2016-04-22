@@ -23,7 +23,7 @@
     });
   };
 
-  Project.fetchAll = function(page) {
+  Project.fetchAll = function(next) {
     if (localStorage.projects) {
       $.ajax( {
         type: 'HEAD',
@@ -32,23 +32,23 @@
           var eTag = xhr.getResponseHeader('eTag');
           if (!localStorage.eTag || eTag !== localStorage.eTag) {
             localStorage.eTag = eTag;
-            Project.getAll(page);
+            Project.getAll(next);
           } else {
             Project.loadAll(JSON.parse(localStorage.projects));
-            page();
+            next();
           }
         }
       });
     } else {
-      Project.getAll();
+      Project.getAll(next);
     }
   };
 
-  Project.getAll = function() {
+  Project.getAll = function(next) {
     $.getJSON('data/projects.json', function(data){
       Project.loadAll(data);
       localStorage.projects = JSON.stringify(Project.all);
-      projectView.initIndexPage();
+      next();
     });
   };
 

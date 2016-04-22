@@ -45,14 +45,14 @@
   };
 
   projectView.handleFilterNav = function() {
-    $('.filters').hide();
-    $('.filter-heading').on('click', function() {
+    $('.filters-list').hide();
+    $('.filters-heading').on('click', function() {
       $(this).hide();
-      $('.filters').slideToggle('slow');
+      $('.filters-list').slideToggle('slow');
     });
-    $('.filter-exit').on('click', function() {
-      $('.filters').slideToggle('fast');
-      $('.filter-heading').fadeIn('slow');
+    $('.filters-exit').on('click', function() {
+      $('.filters-list').hide();
+      $('.filters-heading').fadeIn('slow');
       $('.article-box').show();
     });
   };

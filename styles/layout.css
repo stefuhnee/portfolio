@@ -1,5 +1,6 @@
 body {
   width:  100%;
+  position: relative;
 }
 
 header#main-header {
@@ -8,47 +9,62 @@ header#main-header {
   height: 32vmin;
   z-index:  3;
   width:  96%;
-  margin: 6vmin auto 0 auto;
+  margin: 0 auto;
+  margin-top: 8vmin;
 }
 
 header#about-header {
   margin: 0 auto;
   position: relative;
   z-index: 3;
-  width: 100%;
+  width: 96%;
   margin: 6vmin auto 0 auto;
 }
 
 header#main-header h1 {
   margin: 0 auto;
   padding: 0;
+  display: inline;
+  position: absolute;
 }
 
 header#main-header h2 {
-  position: absolute;
+  position: relative;
   right: 0;
+  margin: 0;
+  margin-bottom: 1vmin;
 }
 
 main {
   width: 96%;
   margin: 0 auto 5% auto;
   position:  relative;
+  bottom: 1vmin;
 }
 
 footer {
-  margin: 5vmin auto 5vmin auto;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
   width: 100%;
   padding: 0;
-  padding-right: 5%;
 }
 
 nav {
   width: 100%;
 }
 
+footer span, footer p {
+  margin-right: 2%;
+}
+
+footer .body-info {
+  margin-top: 1vmin;
+  margin-right: 2%;
+}
+
 .projects {
   position: absolute;
-  bottom: 8vmin;
 }
 
 .project-body section {
@@ -60,45 +76,42 @@ nav {
   margin: 0 auto;
 }
 
-.project-body {
-  margin-top: 1rem;
-  position: relative;
-}
-
 .article-box h1, #about h1 {
-  margin-bottom: 0.5vmin;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
 }
 
 .article-box h2 {
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 1vmin;
 }
 
 .article-box ul {
   margin-bottom: 0;
   height: auto;
-  display: inline-block;
 }
 
 .article-box li {
   padding: 0 1vmin 0 1vmin;
 }
 
-.article-box: p {
-  margin: 0;
+.article-box p {
+  line-height: 4vmin;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin;
 }
 
 .article-box, #about {
+  position: relative;
   width: 96%;
   margin-bottom: 2vmin;
   padding: 0 2% 0 2%;
 }
 
 nav.main-nav {
-  position:  fixed;
+  position: fixed;
   z-index: 5;
-  height: 8vmin;
-  top:  0;
+  top: 0;
 }
 
 nav.main-nav ul {
@@ -109,8 +122,8 @@ nav.main-nav ul {
 }
 
 nav.main-nav li {
-  padding: 0 .5rem;
-  height:  100%;
+  padding: 1vmin;
+  display: inline-block;
 }
 
 nav.social {
@@ -130,31 +143,44 @@ padding: 0;
 }
 
 nav.social li {
-  height: 100%;
-  padding: 0 .4rem;
+  padding: 1vmin;
   display: inline-block;
 }
 
 .article-box .read-on, .article-box .read-less {
-  padding-bottom: 2px;
+  padding-bottom: 2vmin;
   margin: 0 auto;
   min-width: 30%;
 }
 
+
 .filters {
   width: auto;
-  top: 0;
+  top: 2vmin;
   right: 0;
   position: absolute;
+  right: 0;
   z-index: 10;
 }
 
-.filter-exit {
-  margin-top: 1rem;
+.filters ul {
+  position: relative;
+}
+
+.filters li {
+  margin-top: 1vmin;
+}
+
+.filters-exit {
+  margin-top: 1vmin;
 }
 
 .clearfix {
   clear: both;
+}
+
+.overlay {
+  display: none;
 }
 
 .active-overlay {
@@ -163,7 +189,6 @@ nav.social li {
   width: 90%;
   position: fixed;
   z-index: 10;
-  background-color: #303030;
   text-align: center;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -182,6 +207,11 @@ nav.social li {
   margin: 0 auto;
   text-align: center;
   z-index: 0;
+}
+
+#about p {
+  margin-top: 2vmin;
+  line-height: 3.5vmin;
 }
 
 #about-img-container img {

@@ -7,6 +7,7 @@ header#main-header h1 {
   font-weight: normal;
   font-size: 28vmin;
   display: inline-block;
+  position: relative;
 }
 
 header h2 {
@@ -35,7 +36,7 @@ nav.social ul, nav.main-nav ul {
 }
 
 nav.social li, nav.main-nav li {
-  display: inline;
+  display: inline-block;
 }
 
 nav.social {
@@ -47,7 +48,7 @@ nav.social {
 nav.main-nav {
   font-size: 4vmin;
   background-color: #d1d1d1;
-  text-align:center;
+  text-align: center;
   display: table;
 }
 
@@ -60,7 +61,7 @@ nav.main-nav {
 .article-box .read-on, .article-box .read-less {
   color: #f1986b;
   display: block;
-  font-size: 3.75vw;
+  font-size: 3.75vmin;
 }
 
 .article-box h1, #about h1 {
@@ -73,8 +74,7 @@ nav.main-nav {
 
 .article-box h2 {
   font-weight: lighter;
-  display: block;
-  font-size: 2.815vmin;
+  font-size: 3.75vmin;
   font-style: italic;
 }
 
@@ -85,7 +85,8 @@ nav.main-nav {
 
 .article-box li {
     display: inline-block;
-    font-size: 2.815vmin;
+    font-size: 3.75vmin;
+    cursor: pointer;
 }
 
 .preview {
@@ -101,14 +102,15 @@ nav.main-nav {
   color: #f1986b;
 }
 
+.filter-heading {
+  text-align: right;
+}
+
 .filters {
   text-align: right;
 }
 
 .filters ul {
-  margin-top: 7vmin;
-  position: relative;
-  display: block;
   list-style: none;
   font-size: 2vmin;
 }
@@ -120,6 +122,10 @@ nav.main-nav {
 
 .filter-exit {
   font-size: 1rem;
+}
+
+.active-overlay {
+  background-color: #303030;
 }
 
 #about-heading-group {
@@ -158,21 +164,23 @@ max-width:100%
 
 @media (min-width: 400px) {
   .article-box p {
-    font-size: 1.2em;
+    font-size: 3vmin;
   }
 
   .article-box h1 {
-    font-size: 2em;
+    font-size: 5.5vmin;
   }
 
   .article-box .read-on, .article-box .read-less {
-    font-size: 1.1em;
-    min-width: 39%;
+    font-size: 3vmin;
   }
   .article-box h2 {
-    font-size: 1em;
-    margin-top: 1vmin;
-    margin-bottom: 1vmin;
+    font-size: 3vmin;
+    margin-top: 2vmin;
+  }
+
+  .article-box li {
+    font-size: 3vmin;
   }
 
   #about {
@@ -200,10 +208,6 @@ max-width:100%
 
   .article-box {
     position: relative;
-  }
-
-  .project-body {
-    margin-top: 5vmin;
   }
 
   #about header {
