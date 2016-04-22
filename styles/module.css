@@ -129,8 +129,6 @@ nav.main-nav {
 }
 
 #about-heading-group {
-  display: table;
-  height: 100%;
   font-family: 'Open Sans Condensed', sans-serif;
   position: relative;
   bottom: 2vmin
@@ -178,24 +176,16 @@ max-width:90%;
     font-size: 3vmin;
   }
 
-  #about {
+  .about-body {
     margin-top: 4vmin;
   }
 
-   #about h1 {
-     font-size: 6vmin;
-   }
-
-   #about-heading-group {
-     width: 35vmin;
-   }
-
-   #about-img-container {
-     width: 35vmin;
-   }
-
    #about p {
      font-size: 3vmin;
+   }
+
+   #about img {
+     max-width: 70%;
    }
 
 @media (min-width: 768px)  {
@@ -214,23 +204,8 @@ max-width:90%;
     border: 1px solid black;
   }
 
-  #about header {
-    width: 80%;
-  }
-
-  #about-heading-group {
-    width: 30vmin;
-    margin-left: 3vmin;
-    margin-top: 4vmin;
-  }
-
-  #about-img-container {
-    width: 50vmin;
-  }
-
   #about h1 {
     font-size: 6vmin;
-    position: relative;
   }
 
   #about h2 {
