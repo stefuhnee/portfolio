@@ -45,15 +45,14 @@
   };
 
   projectView.handleFilterNav = function() {
-    $('.filters-category-heading').hide();
-    $('.filters-category heading ul').hide();
-    $('.filter-heading').on('click', function() {
-      $(this).fadeOut('fast');
-      $('.filters').slideToggle('slow');
+    $('.filters-list').hide();
+    $('.filters-heading').on('click', function() {
+      $(this).hide();
+      $('.filters-list').slideToggle('slow');
     });
-    $('.filter-exit').on('click', function() {
-      $('.filters').slideToggle('fast');
-      $('.filter-heading').fadeIn('slow');
+    $('.filters-exit').on('click', function() {
+      $('.filters-list').hide();
+      $('.filters-heading').fadeIn('slow');
       $('.article-box').show();
     });
   };
