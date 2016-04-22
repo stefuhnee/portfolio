@@ -7,6 +7,7 @@ header#main-header h1 {
   font-weight: normal;
   font-size: 28vmin;
   display: inline-block;
+  position: relative;
 }
 
 header h2 {
@@ -60,7 +61,7 @@ nav.main-nav {
 .article-box .read-on, .article-box .read-less {
   color: #f1986b;
   display: block;
-  font-size: 3.75vw;
+  font-size: 3.75vmin;
 }
 
 .article-box h1, #about h1 {
@@ -73,8 +74,7 @@ nav.main-nav {
 
 .article-box h2 {
   font-weight: lighter;
-  display: block;
-  font-size: 2.815vmin;
+  font-size: 3.75vmin;
   font-style: italic;
 }
 
@@ -85,7 +85,7 @@ nav.main-nav {
 
 .article-box li {
     display: inline-block;
-    font-size: 2.815vmin;
+    font-size: 3.75vmin;
     cursor: pointer;
 }
 
@@ -168,17 +168,19 @@ max-width:100%
   }
 
   .article-box h1 {
-    font-size: 2em;
+    font-size: 5.5vmin;
   }
 
   .article-box .read-on, .article-box .read-less {
-    font-size: 1.1em;
-    min-width: 39%;
+    font-size: 3vmin;
   }
   .article-box h2 {
-    font-size: 1em;
-    /*margin-top: 1vmin;
-    margin-bottom: 1vmin;*/
+    font-size: 3vmin;
+    margin-top: 2vmin;
+  }
+
+  .article-box li {
+    font-size: 3vmin;
   }
 
   #about {
@@ -206,10 +208,6 @@ max-width:100%
 
   .article-box {
     position: relative;
-  }
-
-  .project-body {
-    /*margin-top: 5vmin;*/
   }
 
   #about header {

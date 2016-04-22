@@ -1,5 +1,6 @@
 body {
   width:  100%;
+  position: relative;
 }
 
 header#main-header {
@@ -8,7 +9,8 @@ header#main-header {
   height: 32vmin;
   z-index:  3;
   width:  96%;
-  margin: 6vmin auto 0 auto;
+  margin: 0 auto;
+  margin-top: 8vmin;
 }
 
 header#about-header {
@@ -22,6 +24,8 @@ header#about-header {
 header#main-header h1 {
   margin: 0 auto;
   padding: 0;
+  display: inline;
+  position: absolute;
 }
 
 header#main-header h2 {
@@ -35,10 +39,13 @@ main {
   width: 96%;
   margin: 0 auto 5% auto;
   position:  relative;
+  bottom: 1vmin;
 }
 
 footer {
-  margin: 5vmin auto 5vmin auto;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
   width: 100%;
   padding: 0;
 }
@@ -51,9 +58,13 @@ footer span, footer p {
   margin-right: 2%;
 }
 
+footer .body-info {
+  margin-top: 1vmin;
+  margin-right: 2%;
+}
+
 .projects {
   position: absolute;
-  bottom: 8vmin;
 }
 
 .project-body section {
@@ -64,11 +75,6 @@ footer span, footer p {
   max-width: 100%;
   margin: 0 auto;
 }
-
-/*.project-body {
-  margin-top: 1rem;
-  position: relative;
-}*/
 
 .article-box h1, #about h1 {
   margin-top: 2vmin;
@@ -96,6 +102,7 @@ footer span, footer p {
 }
 
 .article-box, #about {
+  position: relative;
   width: 96%;
   margin-bottom: 2vmin;
   padding: 0 2% 0 2%;
@@ -200,6 +207,11 @@ nav.social li {
   margin: 0 auto;
   text-align: center;
   z-index: 0;
+}
+
+#about p {
+  margin-top: 2vmin;
+  line-height: 3.5vmin;
 }
 
 #about-img-container img {

@@ -24,3 +24,7 @@ nav {
   font-family: "Open Sans Condensed", sans-serif;
   text-transform: uppercase;
 }
+
+p {
+  margin: 0;
+}
