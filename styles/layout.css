@@ -13,7 +13,7 @@ header#main-header {
   margin-top: 8vmin;
 }
 
-header#about-header {
+#about header {
   margin: 0 auto;
   position: relative;
   z-index: 3;

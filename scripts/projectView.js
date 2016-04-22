@@ -16,9 +16,11 @@
       if ($(this).text() === 'About') {
         $('#main-header h1').hide();
         $('#main-header').height('auto');
+        $('.filters').hide();
       } else {
         $('#main-header h1').show();
         $('#main-header').height('auto');
+        $('.filters').show();
       }
       var $clickedSection = $(this).attr('data-content');
       $('#' + $clickedSection).show();
