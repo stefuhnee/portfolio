@@ -63,10 +63,10 @@
     $('.article-box ul').on('click', '.preview', function(event) {
       event.preventDefault();
       $('.overlay').addClass('active-overlay');
-      $('.overlay img').show();
       var $imgSrc = $(this).data('img-src');
-      $('.overlay img').attr('src', $imgSrc);
-      $('.overlay').on('click', function() {
+      $('.active-overlay img').attr('src', $imgSrc);
+      $('.active-overlay img').show();
+      $('.active-overlay').on('click', function() {
         $(this).removeClass('active-overlay');
         $('.overlay img').hide();
       });

@@ -181,6 +181,7 @@ nav.social li {
 }
 
 .active-overlay {
+  display: block;
   left: 5%;
   height: auto;
   width: 90%;
