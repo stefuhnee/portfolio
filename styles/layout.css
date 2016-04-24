@@ -38,14 +38,12 @@ header#main-header h2 {
 main {
   width: 96%;
   margin: 2% auto 2% auto;
-  position:  relative;
-  bottom: 1vmin;
+  position:  absolute;
+  /*bottom: 1vmin;*/
 }
 
 footer {
-  position: absolute;
-  margin: 0 auto;
-  bottom: 0;
+  position: relative;
   width: 100%;
   padding: 0;
 }
@@ -60,7 +58,6 @@ footer span, footer p {
 
 footer .body-info {
   margin-top: 1vmin;
-  margin-right: 2%;
 }
 
 .projects {
