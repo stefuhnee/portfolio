@@ -217,4 +217,28 @@ max-width:90%;
   #about-heading-group {
     margin-top: 8vmin;
   }
+  main {
+    width: 100%;
+    position: relative;
+  }
+  #projects {
+    width: 76%;
+    position: absolute;
+    right: 10%;
+  }
+  nav.social {
+    position: fixed;
+    bottom: 8%;
+    left: 4%;
+    font-size: 6vmin;
+    width: 6%;
+  }
+  article.article-box {
+    margin-bottom: 4%;
+  }
+  nav.social ul, nav.social li {
+    display: block;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
