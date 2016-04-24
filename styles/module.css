@@ -189,8 +189,9 @@ max-width:90%;
    }
 
 @media (min-width: 768px)  {
-  main {
+  #projects {
     width: 80%;
+    margin: 0 auto;
   }
 
   .article-box h2 {
