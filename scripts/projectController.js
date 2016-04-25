@@ -5,6 +5,7 @@
     $('#projects').empty();
     Project.fetchAll(projectView.initIndexPage);
     $('main > section').hide();
+    $('.filters ul').empty();
     $('.filters').show();
     $('#main-header h1').show();
     $('#main-header').height('auto');

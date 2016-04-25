@@ -5,7 +5,6 @@
     $('main > section').hide();
     $('.filters').hide();
     $('#main-header h1').hide();
-    // $('#main-header').height('auto');
     $('#about').show();
   };
 
