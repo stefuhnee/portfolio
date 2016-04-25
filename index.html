@@ -61,8 +61,8 @@
 
     <nav class="main-nav">
       <ul>
-        <li class="tab" data-content="projects"><a href="#">Home</a></li>
-        <li class="tab" data-content="about"><a href="#">About</a></li>
+        <li class="tab" data-content="projects"><a href="/">Home</a></li>
+        <li class="tab" data-content="about"><a href="/about">About</a></li>
       </ul>
     </nav>
 
@@ -100,8 +100,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="vendor/scripts/page.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/projectView.js"></script>
+    <script src="scripts/projectController.js"></script>
+    <script src="scripts/aboutController.js"></script>
+    <script src="scripts/routes.js"></script>
     <script>
       Project.fetchAll(projectView.initIndexPage);
     </script>
