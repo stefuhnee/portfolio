@@ -129,8 +129,6 @@ nav.main-nav {
 }
 
 #about-heading-group {
-  display: table;
-  height: 100%;
   font-family: 'Open Sans Condensed', sans-serif;
   position: relative;
   bottom: 2vmin
@@ -142,11 +140,6 @@ nav.main-nav {
 
 #about h1 {
   font-size: 6vmin;
-  margin: 0 auto;
-  width: 100%;
-  display: table-cell;
-  vertical-align: middle;
-  position: relative;
 }
 
 #about span {
@@ -159,7 +152,7 @@ nav.main-nav {
 
 #about img {
 border-radius: 25%;
-max-width:100%
+max-width:90%;
 }
 
 @media (min-width: 400px) {
@@ -183,23 +176,24 @@ max-width:100%
     font-size: 3vmin;
   }
 
-  #about {
+  .about-body {
     margin-top: 4vmin;
   }
-
-   #about h1 {
-     font-size: 6vmin;
-   }
-
-   #about-heading-group {
-     float: right;
-   }
 
    #about p {
      font-size: 3vmin;
    }
 
+   #about img {
+     max-width: 70%;
+   }
+
 @media (min-width: 768px)  {
+  #projects {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   .article-box h2 {
     position: absolute;
     right: 2%;
@@ -208,31 +202,44 @@ max-width:100%
 
   .article-box {
     position: relative;
-  }
-
-  #about header {
-    width: 70%;
-  }
-
-  #about-heading-group {
-    width: 45%;
-    float: left;
-    margin-left: 3vmin;
-  }
-
-  #about-img-container {
-    width: 50%;
-    float: left;
+    border: 1px solid black;
   }
 
   #about h1 {
-    font-size: 7vmin;
-    position: relative;
+    font-size: 6vmin;
+  }
+
+  #about h2 {
+    font-size: 5vmin;
   }
 }
 
 @media (min-width: 900px)  {
   #about-heading-group {
     margin-top: 8vmin;
+  }
+  main {
+    width: 100%;
+    position: relative;
+  }
+  #projects {
+    width: 76%;
+    position: absolute;
+    right: 10%;
+  }
+  nav.social {
+    position: fixed;
+    bottom: 8%;
+    left: 4%;
+    font-size: 6vmin;
+    width: 6%;
+  }
+  article.article-box {
+    margin-bottom: 4%;
+  }
+  nav.social ul, nav.social li {
+    display: block;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 }
