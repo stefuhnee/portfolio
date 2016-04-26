@@ -52,17 +52,17 @@
 
     <nav class="social">
       <ul>
-        <li><a href="https://github.com/stefuhnee" target="_blank" class="icon-github"></a></li>
-        <li><a href="https://www.linkedin.com/in/stefanie-hansen-16297519" target="_blank" class="icon-linkedin2"></a></li>
-        <li><a href="https://twitter.com/_stefuhnee" target="_blank" class="icon-twitter"></a></li>
-        <li><a href="https://www.facebook.com/stefuhn33" target="_blank" class="icon-facebook"></a></li>
+        <li><a href="https://github.com/stefuhnee" target="_blank" class="icon icon-github"></a></li>
+        <li><a href="https://www.linkedin.com/in/stefanie-hansen-16297519" target="_blank" class="icon icon-linkedin2"></a></li>
+        <li><a href="https://twitter.com/_stefuhnee" target="_blank" class="icon icon-twitter"></a></li>
+        <li><a href="https://www.facebook.com/stefuhn33" target="_blank" class="icon icon-facebook"></a></li>
       </ul>
     </nav>
 
     <nav class="main-nav">
       <ul>
-        <li class="tab" data-content="projects"><a href="#">Home</a></li>
-        <li class="tab" data-content="about"><a href="#">About</a></li>
+        <li class="tab" data-content="projects"><a href="/">Home</a></li>
+        <li class="tab" data-content="about"><a href="/about">About</a></li>
       </ul>
     </nav>
 
@@ -72,15 +72,14 @@
 
       <section id="about" class="tab-content">
         <header>
-          <div id="about-img-container">
             <img src="img/profile.png">
-          </div>
           <div id="about-heading-group">
             <h1>Stefanie Hansen
             <span>is a developer seeking to create a beautiful and functional user experience.</span></h1>
           </div>
         </header>
-        <div class="clearfix about-body">
+        <div class="clearfix"></div>
+        <div class="about-body">
           <p>
             I chose to study programming because it simultaneously presents intellectual challenges and allows for a tremendous amount of creativity. It is vitally important to me to continually improve upon my skillset and learn new technologies. I approach roadblocks as opportunities to expand both my breadth and depth of knowledge.
           </p>
@@ -100,10 +99,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="vendor/scripts/page.js"></script>
     <script src="scripts/app.js"></script>
     <script src="scripts/projectView.js"></script>
-    <script>
-      Project.fetchAll(projectView.initIndexPage);
-    </script>
+    <script src="scripts/projectController.js"></script>
+    <script src="scripts/aboutController.js"></script>
+    <script src="scripts/routes.js"></script>
+
   </body>
 </html>

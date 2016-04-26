@@ -9,25 +9,6 @@
     });
   };
 
-  projectView.handleMainNav = function() {
-    $('.main-nav').on('click', 'li', function() {
-      $('section.tab-content').hide();
-      console.log($(this).text());
-      if ($(this).text() === 'About') {
-        $('#main-header h1').hide();
-        $('#main-header').height('auto');
-        $('.filters').hide();
-      } else {
-        $('#main-header h1').show();
-        $('#main-header').height('auto');
-        $('.filters').show();
-      }
-      var $clickedSection = $(this).attr('data-content');
-      $('#' + $clickedSection).show();
-    });
-    $('.main-nav .tab:first').click();
-  };
-
   projectView.setTeasers = function() {
     var $extraParagraphs = $('.project-body *:nth-of-type(n+2)');
     $extraParagraphs.hide();
@@ -50,7 +31,7 @@
     $('.filters-list').hide();
     $('.filters-heading').on('click', function() {
       $(this).hide();
-      $('.filters-list').slideToggle('slow');
+      $('.filters-list').slideDown('slow');
     });
     $('.filters-exit').on('click', function() {
       $('.filters-list').hide();
@@ -94,7 +75,6 @@
       $('.body-info').text(Project.findBodyLength() + ' words within the content on this page :)');
     });
     projectView.handleCategoryFilter();
-    projectView.handleMainNav();
     projectView.setTeasers();
     projectView.handleFilterNav();
     projectView.handleOverlay();
