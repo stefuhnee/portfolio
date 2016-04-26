@@ -134,10 +134,6 @@ nav.main-nav {
   bottom: 2vmin
 }
 
-#about-img-container {
-  display: inline-block;
-}
-
 #about h1 {
   font-size: 6vmin;
 }
@@ -152,7 +148,6 @@ nav.main-nav {
 
 #about img {
 border-radius: 25%;
-max-width:90%;
 }
 
 @media (min-width: 400px) {
@@ -184,9 +179,9 @@ max-width:90%;
      font-size: 3vmin;
    }
 
-   #about img {
-     max-width: 70%;
-   }
+     #about-heading-group {
+       padding-left: 2vmin;
+     }
 
 @media (min-width: 768px)  {
   #projects {
@@ -211,6 +206,10 @@ max-width:90%;
 
   #about h2 {
     font-size: 5vmin;
+  }
+
+  #about header {
+    margin-top: 2vmin
   }
 }
 
@@ -240,5 +239,8 @@ max-width:90%;
     display: block;
     padding-left: 2%;
     padding-right: 2%;
+  }
+  #about-heading-group {
+    right: 10vmin;
   }
 }
