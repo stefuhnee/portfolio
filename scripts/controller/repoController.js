@@ -6,5 +6,5 @@
     repos.requestRepos(repoView.index);
   };
 
-  repos.aboutController = repoController;
+  module.repoController = repoController;
 })(window);

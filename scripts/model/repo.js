@@ -12,6 +12,7 @@
       success: function(data){
         repos.all = data;
         callback(data);
+        console.log(data);
       }
     });
 

@@ -66,8 +66,9 @@
 
     <nav class="main-nav">
       <ul>
-        <li class="tab" data-content="projects"><a href="/">Home</a></li>
-        <li class="tab" data-content="about"><a href="/about">About</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/repos">Github Repos</a></li>
       </ul>
     </nav>
 
@@ -95,10 +96,11 @@
             I believe that life is what you make it, and I want to leave the world a richer, kinder, and more interesting place. I enjoy working with others and I strive to achieve my goals. I am excited to meet you and work with you to create something awesome and unique!
           </p>
         </div>
-        <div class="repo">
-          <h2>Recent Git Repositories</h2>
-          <ul></ul>
-        </div>
+      </section>
+
+      <section class="repo">
+        <h2>Recent Git Repositories</h2>
+        <ul></ul>
       </section>
 
       <footer>
@@ -113,7 +115,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="vendor/scripts/page.js"></script>
 
-    <script src="scripts/githubToken.js"></script>
+    <script src="scripts/model/githubToken.js"></script>
 
     <!-- Model files: -->
     <script src="scripts/model/app.js"></script>
