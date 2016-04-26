@@ -8,6 +8,7 @@
     $('.filters ul').empty();
     $('.filters').show();
     $('#main-header h1').show();
+    $('nav.social').show();
     $('#main-header').height('auto');
   };
 

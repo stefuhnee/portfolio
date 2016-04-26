@@ -5,6 +5,7 @@
     $('.repo').show().siblings().hide();
     $('.filters').hide();
     $('#main-header h1').hide();
+    $('nav.social').hide();
     repos.requestRepos(repoView.index);
   };
 
