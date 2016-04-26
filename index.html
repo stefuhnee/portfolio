@@ -32,8 +32,9 @@
     </script>
 
     <script id="repo-template" type="text/x-handlebars-template">
-      <li>{{name}}</li>
-
+      <a href="{{html_url}}"><li>{{name}}</li></a>
+      <li>Last pushed on: {{pushed_at}}</li>
+      <li>Forks: {{forks}}</li>
     </script>
 
   </head>
