@@ -31,7 +31,7 @@
     $('.filters-list').hide();
     $('.filters-heading').on('click', function() {
       $(this).hide();
-      $('.filters-list').slideToggle('slow');
+      $('.filters-list').slideDown('slow');
     });
     $('.filters-exit').on('click', function() {
       $('.filters-list').hide();
