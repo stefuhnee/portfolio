@@ -31,6 +31,11 @@
       <a href="#"><li>{{category}}</li></a>
     </script>
 
+    <script id="repo-template" type="text/x-handlebars-template">
+      <li>{{name}}</li>
+
+    </script>
+
   </head>
   <body>
 
@@ -90,11 +95,17 @@
             I believe that life is what you make it, and I want to leave the world a richer, kinder, and more interesting place. I enjoy working with others and I strive to achieve my goals. I am excited to meet you and work with you to create something awesome and unique!
           </p>
         </div>
+        <div class="repo">
+          <h2>Recent Git Repositories</h2>
+          <ul></ul>
+        </div>
       </section>
+
       <footer>
         <span>&copy; 2016 Stefanie Hansen</span>
         <p class="body-info"></p>
       </footer>
+
     </main>
 
     <!-- Vendor files: -->
@@ -113,10 +124,10 @@
     <script src="scripts/view/repoView.js"></script>
 
     <!-- Controller files: -->
-    <script src="scripts/view/projectController.js"></script>
-    <script src="scripts/aboutController.js"></script>
+    <script src="scripts/controller/projectController.js"></script>
+    <script src="scripts/controller/aboutController.js"></script>
+    <script src="scripts/controller/repoController.js"></script>
 
     <script src="scripts/routes.js"></script>
-
   </body>
 </html>
