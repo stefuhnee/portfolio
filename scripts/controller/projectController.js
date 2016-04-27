@@ -4,6 +4,7 @@
   projectController.index = function() {
     $('#projects').empty();
     $('#projects').show().siblings().hide();
+    $('footer').show();
     Project.fetchAll(projectView.initIndexPage);
     $('.filters ul').empty();
     $('.filters').show();
