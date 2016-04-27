@@ -3,13 +3,13 @@
 
   projectController.index = function() {
     $('#projects').empty();
+    $('#projects').show().siblings().hide();
     Project.fetchAll(projectView.initIndexPage);
-    $('main > section').hide();
     $('.filters ul').empty();
     $('.filters').show();
     $('#main-header h1').show();
+    $('nav.social').show();
     $('#main-header').height('auto');
-    $('#projects').show();
   };
 
   module.projectController = projectController;

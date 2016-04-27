@@ -31,6 +31,12 @@
       <a href="#"><li>{{category}}</li></a>
     </script>
 
+    <script id="repo-template" type="text/x-handlebars-template">
+      <a href="{{html_url}}"><li>{{name}}</li></a>
+      <li>Last pushed on: {{pushed_at}}</li>
+      <li>Forks: {{forks}}</li>
+    </script>
+
   </head>
   <body>
 
@@ -61,8 +67,9 @@
 
     <nav class="main-nav">
       <ul>
-        <li class="tab" data-content="projects"><a href="/">Home</a></li>
-        <li class="tab" data-content="about"><a href="/about">About</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/repos">Github Repos</a></li>
       </ul>
     </nav>
 
@@ -91,20 +98,39 @@
           </p>
         </div>
       </section>
+
+      <section class="repo">
+        <h2>Recent Git Repositories</h2>
+        <ul></ul>
+      </section>
+
       <footer>
         <span>&copy; 2016 Stefanie Hansen</span>
         <p class="body-info"></p>
       </footer>
+
     </main>
 
+    <!-- Vendor files: -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
     <script src="vendor/scripts/page.js"></script>
-    <script src="scripts/app.js"></script>
-    <script src="scripts/projectView.js"></script>
-    <script src="scripts/projectController.js"></script>
-    <script src="scripts/aboutController.js"></script>
-    <script src="scripts/routes.js"></script>
 
+    <script src="scripts/model/githubToken.js"></script>
+
+    <!-- Model files: -->
+    <script src="scripts/model/app.js"></script>
+    <script src="scripts/model/repo.js"></script>
+
+    <!-- View files: -->
+    <script src="scripts/view/projectView.js"></script>
+    <script src="scripts/view/repoView.js"></script>
+
+    <!-- Controller files: -->
+    <script src="scripts/controller/projectController.js"></script>
+    <script src="scripts/controller/aboutController.js"></script>
+    <script src="scripts/controller/repoController.js"></script>
+
+    <script src="scripts/routes.js"></script>
   </body>
 </html>
