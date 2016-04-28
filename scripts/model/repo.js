@@ -3,19 +3,13 @@
   repos.all = [];
 
   repos.requestRepos = function(callback) {
-    $.ajax({
-      url: 'https://api.github.com/users/stefuhnee/repos' +
+    $.get('/github/users/stefuhnee/repos' +
         '?per_page=5' +
-        '&sort=updated',
-      type: 'GET',
-      headers: {'Authorization':'token ' + githubToken},
-      success: function(data){
-        console.log(data);
+        '&sort=updated')
+      .done(function(data){
         repos.all = data;
         callback(data);
-      }
-    });
-
+      });
   };
 
   repos.with = function(attr) {
