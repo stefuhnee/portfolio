@@ -72,7 +72,6 @@
         $('.filters ul').append(a.toHTML('#category-filter-template'));
         categories.push(a.category);
       };
-      $('.body-info').text(Project.findBodyLength() + ' words within the content on this page :)');
     });
     projectView.handleCategoryFilter();
     projectView.setTeasers();

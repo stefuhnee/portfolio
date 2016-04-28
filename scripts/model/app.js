@@ -52,14 +52,5 @@
     });
   };
 
-  Project.findBodyLength = function() {
-    return Project.all.map(function(project) {
-      return project.projectBody.match(/\b\w+/g).length;
-    })
-    .reduce(function (a, b) {
-      return a + b;
-    });
-  };
-
   module.Project = Project;
 })(window);
