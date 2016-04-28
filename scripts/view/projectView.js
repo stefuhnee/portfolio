@@ -2,11 +2,14 @@
   var projectView = {};
 
   projectView.handleCategoryFilter = function() {
-    $('.filters ul').on('click', 'li', function(e) {
-      e.preventDefault();
+    $('.filters ul').on('click', 'li', function() {
       $('.article-box').hide();
-      $('article[data-category="' + $(this).text() + '"]').show();
+      page('/category/' + $(this).text().replace(/\W+/g, '+'));
     });
+  };
+
+  projectView.displayCategories = function(category) {
+    $('article[data-category="' + category + '"]').show();
   };
 
   projectView.setTeasers = function() {

@@ -52,5 +52,10 @@
     });
   };
 
+  Project.findWhere = function(category, callback) {
+    projects = $('article[data-category="' + category + '"]');
+    callback(projects);
+  };
+
   module.Project = Project;
 })(window);
