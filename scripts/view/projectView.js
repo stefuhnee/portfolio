@@ -58,10 +58,10 @@
   };
 
   projectView.imageHover = function() {
-    $('#about-img-container img').on('mouseover', function() {
+    $('#about img').on('mouseover', function() {
       $(this).attr('src', 'img/profile-color.png');
     });
-    $('#about-img-container img').on('mouseout', function() {
+    $('#about img').on('mouseout', function() {
       $(this).attr('src', 'img/profile.png');
     });
   };
