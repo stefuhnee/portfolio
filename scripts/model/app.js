@@ -52,13 +52,9 @@
     });
   };
 
-  Project.findBodyLength = function() {
-    return Project.all.map(function(project) {
-      return project.projectBody.match(/\b\w+/g).length;
-    })
-    .reduce(function (a, b) {
-      return a + b;
-    });
+  Project.findWhere = function(category, callback) {
+    projects = $('article[data-category="' + category + '"]');
+    callback(projects);
   };
 
   module.Project = Project;

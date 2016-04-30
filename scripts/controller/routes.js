@@ -1,4 +1,4 @@
 page('/', projectController.index);
 page('/about', aboutController.index);
-page('/repos', repoController.index);
+page('/category/:categoryName', projectController.loadByCategory);
 page();

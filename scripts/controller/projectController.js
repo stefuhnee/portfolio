@@ -13,5 +13,9 @@
     $('#main-header').height('auto');
   };
 
+  projectController.loadByCategory = function(ctx) {
+    projectView.displayCategories(ctx.params.categoryName.replace('+', '-'));
+  };
+
   module.projectController = projectController;
 })(window);
